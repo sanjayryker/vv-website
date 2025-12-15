@@ -155,43 +155,55 @@ export const Contact = () => {
           Send Us a Message
         </h2>
 
-        <form className="grid gap-6">
-  <input
-    className="contact-input block mx-auto w-full md:w-[480px]"
-    placeholder="Full Name"
-  />
+        <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        className="grid gap-6"
+        >
+        {/* Required hidden input */}
+        <input type="hidden" name="form-name" value="contact" />
 
-  <input
-    className="contact-input block mx-auto w-full md:w-[480px]"
-    placeholder="Email Address"
-  />
+        {/* Honeypot field (spam protection) */}
+        <input type="hidden" name="bot-field" />
 
-  <input
-    className="contact-input block mx-auto w-full md:w-[480px]"
-    placeholder="Phone Number"
-  />
+        <input
+            className="contact-input block mx-auto w-full md:w-[480px]"
+            name="name"
+            placeholder="Full Name"
+            required
+        />
 
-  <textarea
-    className="contact-input block mx-auto w-full md:w-[480px] h-32"
-    placeholder="Tell us about your requirement"
-  />
+        <input
+            className="contact-input block mx-auto w-full md:w-[480px]"
+            name="email"
+            type="email"
+            placeholder="Email Address"
+            required
+        />
 
-  <button
-    type="submit"
-    className="
-      block mx-auto
-      bg-gold text-dark 
-      py-3 
-      w-56 md:w-64
-      rounded-full 
-      font-medium 
-      hover:bg-gold-soft 
-      transition
-    "
-  >
-    Submit
-  </button>
-</form>
+        <input
+            className="contact-input block mx-auto w-full md:w-[480px]"
+            name="phone"
+            placeholder="Phone Number"
+        />
+
+        <textarea
+            className="contact-input block mx-auto w-full md:w-[480px] h-32"
+            name="message"
+            placeholder="Tell us about your requirement"
+            required
+        />
+
+        <button
+            type="submit"
+            className="block mx-auto bg-gold text-dark py-3 w-56 md:w-64 rounded-full font-medium hover:bg-gold-soft transition"
+        >
+            Submit
+        </button>
+        </form>
+
 
       </section>
       <WhatsAppFloat/>
