@@ -28,6 +28,28 @@ const proposalOptions = [
    PAGE
 ----------------------------- */
 export const Contact = () => {
+
+    const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  try {
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    });
+
+    // redirect manually
+    window.location.href = "/success";
+  } catch (err) {
+    alert("Submission failed. Please try again.");
+  }
+};
+
+
   return (
     <>
     <Navbar/>
@@ -158,10 +180,9 @@ export const Contact = () => {
       <form
   name="contact"
   method="POST"
-  action="/success"
   data-netlify="true"
   netlify-honeypot="bot-field"
-  encType="application/x-www-form-urlencoded"
+  onSubmit={handleSubmit}
   className="grid gap-6"
 >
   <input type="hidden" name="form-name" value="contact" />
@@ -202,6 +223,7 @@ export const Contact = () => {
     Submit
   </button>
 </form>
+
 
 
       </section>
