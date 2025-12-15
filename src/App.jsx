@@ -10,6 +10,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path='/contact' element={<Contact/>}/>
+        <Route path="/success" element={<Success />} />
       </Routes>
     </>
   );

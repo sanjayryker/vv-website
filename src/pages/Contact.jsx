@@ -155,54 +155,53 @@ export const Contact = () => {
           Send Us a Message
         </h2>
 
-        <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-        className="grid gap-6"
-        >
-        {/* Required hidden input */}
-        <input type="hidden" name="form-name" value="contact" />
+      <form
+  name="contact"
+  method="POST"
+  action="/success"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  encType="application/x-www-form-urlencoded"
+  className="grid gap-6"
+>
+  <input type="hidden" name="form-name" value="contact" />
+  <input type="hidden" name="bot-field" />
 
-        {/* Honeypot field (spam protection) */}
-        <input type="hidden" name="bot-field" />
+  <input
+    name="name"
+    className="contact-input block mx-auto w-full md:w-[480px]"
+    placeholder="Full Name"
+    required
+  />
 
-        <input
-            className="contact-input block mx-auto w-full md:w-[480px]"
-            name="name"
-            placeholder="Full Name"
-            required
-        />
+  <input
+    name="email"
+    type="email"
+    className="contact-input block mx-auto w-full md:w-[480px]"
+    placeholder="Email Address"
+    required
+  />
 
-        <input
-            className="contact-input block mx-auto w-full md:w-[480px]"
-            name="email"
-            type="email"
-            placeholder="Email Address"
-            required
-        />
+  <input
+    name="phone"
+    className="contact-input block mx-auto w-full md:w-[480px]"
+    placeholder="Phone Number"
+  />
 
-        <input
-            className="contact-input block mx-auto w-full md:w-[480px]"
-            name="phone"
-            placeholder="Phone Number"
-        />
+  <textarea
+    name="message"
+    className="contact-input block mx-auto w-full md:w-[480px] h-32"
+    placeholder="Tell us about your requirement"
+    required
+  />
 
-        <textarea
-            className="contact-input block mx-auto w-full md:w-[480px] h-32"
-            name="message"
-            placeholder="Tell us about your requirement"
-            required
-        />
-
-        <button
-            type="submit"
-            className="block mx-auto bg-gold text-dark py-3 w-56 md:w-64 rounded-full font-medium hover:bg-gold-soft transition"
-        >
-            Submit
-        </button>
-        </form>
+  <button
+    type="submit"
+    className="block mx-auto bg-gold text-dark py-3 w-56 md:w-64 rounded-full font-medium hover:bg-gold-soft transition"
+  >
+    Submit
+  </button>
+</form>
 
 
       </section>
