@@ -182,7 +182,7 @@ export const Contact = () => {
   method="POST"
   data-netlify="true"
   netlify-honeypot="bot-field"
-//   onSubmit={handleSubmit}
+  onSubmit={handleSubmit}
   className="grid gap-6"
 >
   <input type="hidden" name="form-name" value="contact" />
