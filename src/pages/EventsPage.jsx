@@ -1,187 +1,161 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Lightbox } from "../components/LightBox";
+import {EventCategory} from "../components/EventCategory"
+import Navbar from "../components/Navbar";
+import { Footer } from "../components/Footer";
 
+/* -----------------------------
+   CATEGORY NAV
+----------------------------- */
+const categories = [
+  { id: "vibes", label: "Namma Ooru Vibes" },
+  { id: "awards", label: "Award Shows" },
+  { id: "records", label: "World Records" },
+  { id: "international", label: "International Events" },
+  { id: "upcoming", label: "Upcoming" }
+];
+
+/* -----------------------------
+   PAGE
+----------------------------- */
 export const EventsPage = () => {
-  const [tab, setTab] = useState("portfolio"); // default section
+  const [viewer, setViewer] = useState({
+    open: false,
+    images: [],
+    index: 0
+  });
+
+  const openViewer = (images, index) => {
+    setViewer({ open: true, images, index });
+  };
+
+  const closeViewer = () => {
+    setViewer({ open: false, images: [], index: 0 });
+  };
 
   return (
+    <>
+    <Navbar/>
     <section className="px-6 py-20 max-w-7xl mx-auto">
 
-      {/* PAGE HEADING */}
-      <div className="text-center mb-14">
-        <p className="uppercase tracking-[0.25em] text-sm md:text-xl text-gold">
+      {/* PAGE HEADER */}
+      <div className="text-center mt-2 mb-16">
+        <p className="uppercase tracking-[0.25em] text-gold text-sm md:text-xl">
           Our Events
         </p>
-        <h2 className="text-3xl md:text-5xl font-heading text-dark">
+        <h1 className="text-3xl md:text-5xl font-heading text-dark">
           Showcasing Our Events & Memorable Moments
-        </h2>
+        </h1>
       </div>
 
-      {/* CATEGORY BUTTONS */}
-      <div className="flex flex-wrap justify-center gap-4 mb-12">
-        <button
-          onClick={() => setTab("portfolio")}
-          className={`px-6 py-3 rounded-full text-sm transition shadow-md 
-            ${tab === "portfolio" 
-              ? "bg-gold text-white" 
-              : "border border-gold text-gold hover:bg-gold/10"}`}
-        >
-          Watch Portfolio
-        </button>
-
-        <button
-          onClick={() => setTab("upcoming")}
-          className={`px-6 py-3 rounded-full text-sm transition shadow-md 
-            ${tab === "upcoming" 
-              ? "bg-gold text-white" 
-              : "border border-gold text-gold hover:bg-gold/10"}`}
-        >
-          Upcoming Events
-        </button>
-
-        <button
-          onClick={() => setTab("details")}
-          className={`px-6 py-3 rounded-full text-sm transition shadow-md 
-            ${tab === "details" 
-              ? "bg-gold text-white" 
-              : "border border-gold text-gold hover:bg-gold/10"}`}
-        >
-          Event Details
-        </button>
+      {/* CATEGORY SCROLL BAR */}
+      <div className="sticky top-20 z-20 bg-white py-4 mb-20">
+        <div className="flex gap-2 overflow-x-auto scrollbar-hide">
+          {categories.map(c => (
+            <a
+              key={c.id}
+              href={`#${c.id}`}
+              className="shrink-0 px-6 py-2 rounded-full border border-gold text-gold text-sm hover:bg-gold/10 transition"
+            >
+              {c.label}
+            </a>
+          ))}
+        </div>
       </div>
 
-      {/* ---------------------------- */}
-      {/* TAB CONTENTS */}
-      {/* ---------------------------- */}
+      {/* EVENTS */}
+      <EventCategory
+        id="vibes"
+        title="Namma Ooru Vibes"
+        intro="Where tradition meets modern celebration."
+        about={
+          <>
+            Namma Ooru Vibes by VV Entertainments blends live music, food,
+            dance floors and powerful cultural performances like dhol
+            and chendamelam to create unforgettable experiences across the world.
+          </>
+        }
+        gallery={["/events/vibes1.jpg", "/events/vibes2.jpg", "/events/vibes3.jpg"]}
+        onImageClick={(i) =>
+          openViewer(["/events/vibes1.jpg", "/events/vibes2.jpg", "/events/vibes3.jpg"], i)
+        }
+      />
 
-      {/* ============================= */}
-      {/* WATCH PORTFOLIO TAB */}
-      {/* ============================= */}
-      {tab === "portfolio" && (
-        <motion.section
-          key="portfolio"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          className="mb-20"
-        >
-          <h3 className="text-2xl font-heading text-dark mb-6">
-            Moments We've Created
-          </h3>
+      <EventCategory
+        id="awards"
+        title="Award Shows"
+        intro="Honoring excellence across industries."
+        about={
+          <>
+            From Global Women Icon Awards to Lifetime Achievement recognitions,
+            our award shows celebrate impact, leadership and inspiration.
+          </>
+        }
+        gallery={["/events/award1.jpg", "/events/award2.jpg", "/events/award3.jpg"]}
+        onImageClick={(i) =>
+          openViewer(["/events/award1.jpg", "/events/award2.jpg", "/events/award3.jpg"], i)
+        }
+      />
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4 }}
-                viewport={{ once: true }}
-                className="rounded-2xl overflow-hidden shadow-lg"
-              >
-                <img
-                  src={`/events/gallery${i}.jpg`}
-                  className="w-full h-64 object-cover"
-                />
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
+      <EventCategory
+        id="records"
+        title="World Records"
+        intro="Creating history together."
+        about={
+          <>
+            From largest human chains to mass self-defense demonstrations,
+            VV Entertainments proudly executes record-breaking events.
+          </>
+        }
+        gallery={["/events/record1.jpg", "/events/record2.jpg"]}
+        onImageClick={(i) =>
+          openViewer(["/events/record1.jpg", "/events/record2.jpg"], i)
+        }
+      />
+
+      <EventCategory
+        id="international"
+        title="International Events"
+        intro="Global celebrations with local soul."
+        about={
+          <>
+            From Sri Lanka to the USA, our international award shows
+            and festivals bring people together beyond borders.
+          </>
+        }
+        gallery={["/events/int1.jpg", "/events/int2.jpg"]}
+        onImageClick={(i) =>
+          openViewer(["/events/int1.jpg", "/events/int2.jpg"], i)
+        }
+      />
+
+      <EventCategory
+        id="upcoming"
+        title="Upcoming Events"
+        intro="What’s next?"
+        about={
+          <>
+            UTSAV Mela ’25 – Dallas • Lumiere Short Film Contests •
+            Makeup Contest & Fashion Show.
+          </>
+        }
+        gallery={["/events/up1.jpg"]}
+        onImageClick={(i) =>
+          openViewer(["/events/up1.jpg"], i)
+        }
+      />
+
+      {/* LIGHTBOX */}
+      {viewer.open && (
+        <Lightbox
+          images={viewer.images}
+          index={viewer.index}
+          onClose={closeViewer}
+        />
       )}
-
-      {/* ============================= */}
-      {/* UPCOMING EVENTS TAB */}
-      {/* ============================= */}
-      {tab === "upcoming" && (
-        <motion.section
-          key="upcoming"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          className="mb-20"
-        >
-          <h3 className="text-2xl font-heading text-dark mb-6">
-            Upcoming Events
-          </h3>
-
-          <div className="space-y-8">
-            <div className="p-6 border rounded-2xl shadow-sm">
-              <h4 className="text-xl font-heading text-dark">Utsav Mela 2025</h4>
-              <p className="text-gray-600">Dallas, Texas – Oct 10</p>
-            </div>
-
-            <div className="p-6 border rounded-2xl shadow-sm">
-              <h4 className="text-xl font-heading text-dark">Lumiere Shortfilm Contests</h4>
-              <p className="text-gray-600">
-                Pandiyas | Cholas | Cheras | Pallavas – Dec 2024
-              </p>
-            </div>
-
-            <div className="p-6 border rounded-2xl shadow-sm">
-              <h4 className="text-xl font-heading text-dark">Makeup Contest & Fashion Show</h4>
-              <p className="text-gray-600">Coming Soon</p>
-            </div>
-          </div>
-        </motion.section>
-      )}
-
-      {/* ============================= */}
-      {/* EVENT DETAILS TAB */}
-      {/* ============================= */}
-      {tab === "details" && (
-        <motion.section
-          key="details"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          className="mb-20"
-        >
-          {/* NAMMA OORU VIBES */}
-          <div className="mb-10">
-            <h4 className="text-xl font-heading text-gold mb-2">
-              Namma Ooru Vibes
-            </h4>
-            <p className="text-gray-700 leading-relaxed">
-              Bringing the experience where tradition meets modern events…
-            </p>
-
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-4">
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="rounded-2xl overflow-hidden shadow-md">
-                  <img
-                    src={`/events/vibes${i}.jpg`}
-                    className="w-full h-60 object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* AWARD SHOWS */}
-          <div className="mb-10">
-            <h4 className="text-xl font-heading text-gold mb-2">Award Shows</h4>
-            <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Global Women Icon Awards – Madurai – March 7</li>
-              <li>Joint for Care Social Service Awards – Madurai – March 7</li>
-              <li>Lifetime Achievement Awards – Chennai & Madurai</li>
-              <li>Thamaya Women Warriors – Virudhunagar – May 24–25</li>
-              <li>Chennai Award Show – Aerohub Mall – April 27</li>
-            </ul>
-          </div>
-
-          {/* WORLD RECORDS */}
-          <div className="mb-10">
-            <h4 className="text-xl font-heading text-gold mb-2">World Records</h4>
-            <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Largest Human Chain – Sunita Williams Portrait</li>
-              <li>Largest Women Self Defense Demo – Madurai</li>
-              <li>Maximum Students Reciting Multilingual Phrase – Chennai</li>
-              <li>Upcoming: Stop Violence Against Her – Dec 17</li>
-            </ul>
-          </div>
-        </motion.section>
-      )}
-
     </section>
+    <Footer/>
+    </>
   );
 };

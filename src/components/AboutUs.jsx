@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-export const AboutUs = () => {
+export const AboutUs = ({id}) => {
   return (
-    <section className=" px-6  pb-16 md:py-24 max-w-7xl mx-auto">
+    <section id={id} className=" px-6  pb-16 md:py-24 max-w-7xl mx-auto scroll-mt-24">
       <div className="grid md:grid-cols-2 gap-10 items-center">
 
         {/* LEFT IMAGE */}
@@ -69,13 +69,13 @@ export const AboutUs = () => {
           </div>
 
           {/* Button */}
-          <motion.button
+          {/* <motion.button
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
             className="border border-gold text-gold px-6 py-2 md:px-8 md:py-3 rounded-full font-medium text-sm md:text-base hover:bg-gold/10 transition"
           >
             Learn More
-          </motion.button>
+          </motion.button> */}
         </motion.div>
 
       </div>

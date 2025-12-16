@@ -56,3 +56,15 @@
          focus:outline-none focus:border-gold
          text-sm md:text-base;
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  scrollbar-width: none;
+}

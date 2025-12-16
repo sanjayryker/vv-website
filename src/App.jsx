@@ -3,10 +3,12 @@ import Home from "./pages/Home";
 import {EventsPage} from "./pages/EventsPage";
 import {Contact} from "./pages/Contact";
 import { Success } from "./pages/Success";
+import ScrollToHash from "./components/ScrollToHash";
 
 export default function App() {
   return (
     <>
+    <ScrollToHash/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<EventsPage />} />

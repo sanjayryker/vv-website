@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-export const Trust = () => {
+export const Trust = ({id}) => {
   return (
-    <section className="px-6 py-4 md:py-16 max-w-7xl mx-auto bg-gold relative">
+    <section id={id} className="px-6 py-4 md:py-16 max-w-7xl mx-auto bg-gold relative scroll-mt-24">
       <div className="grid md:grid-cols-2 gap-10 items-center">
 
         {/* LEFT IMAGE */}

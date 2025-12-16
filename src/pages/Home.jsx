@@ -22,15 +22,15 @@ export default function Home() {
       {/* Navbar */}
       <Navbar />
       <HeroA/>
-      <AboutUs/>
-      <Founder/>
+      <AboutUs id="vv"/>
+      <Founder id="founder"/>
       <Events/>
       <Awards/>
       <InternationalEvents/>
       {/* <UpcomingEvents/>
       <WorldRecords/>
       <OtherEvents/> */}
-      <Trust/>
+      <Trust id="trust"/>
       <NewspaperCutting/>
       <Testimonial1/>
       <Stats/>

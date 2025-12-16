@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const HeroA = () => {
   const slides = [
@@ -63,7 +64,7 @@ export const HeroA = () => {
       </div>
 
       {/* TEXT CONTENT */}
-      <div className="relative z-10 h-full flex items-center px-6 md:px-14">
+      <div className="relative z-10 h-full flex items-center px-6 pt-25 md:pt-0 md:px-14 ">
         <div className="max-w-xl space-y-5">
 
           {/* SUBTITLE (GOLD) */}
@@ -77,7 +78,7 @@ export const HeroA = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-3xl md:text-5xl lg:text-6xl font-heading text-white drop-shadow-[0_3px_10px_rgba(0,0,0,0.45)]"
+            className="text-2xl md:text-5xl lg:text-6xl font-heading text-white drop-shadow-[0_3px_10px_rgba(0,0,0,0.45)]"
           >
             {slides[current].title}
           </motion.h1>
@@ -101,14 +102,14 @@ export const HeroA = () => {
             className="flex items-center gap-3 pt-2"
           >
             {/* Filled Gold Button */}
-            <button className="bg-gold text-white px-5 py-2 rounded-full text-sm md:text-base md:px-7 md:py-3 font-medium shadow-sm hover:bg-gold-soft transition">
+            <Link to="/contact#proposal" className="bg-gold text-white px-5 py-2 rounded-full text-sm md:text-base md:px-7 md:py-3 font-medium shadow-sm hover:bg-gold-soft transition">
               Let's Collaborate
-            </button>
+            </Link>
 
             {/* Gold Outline Button */}
-            <button className="border border-gold text-white px-5 py-2 rounded-full text-sm md:text-base md:px-7 md:py-3 font-medium hover:bg-gold/10 transition">
+            <Link to="/events" className="border border-gold text-white px-5 py-2 rounded-full text-sm md:text-base md:px-7 md:py-3 font-medium hover:bg-gold/10 transition">
               Our Works
-            </button>
+            </Link>
           </motion.div>
 
           {/* DOT INDICATORS */}

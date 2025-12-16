@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 export const InternationalEvents = () => {
   const services = [
@@ -96,13 +97,11 @@ export const InternationalEvents = () => {
         </Swiper>
       </div>
       <div className="my-3 mt-8 text-center">
-        <motion.button
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.2 }}
+        <Link to='/events'
             className="border border-gold text-gold px-6 py-2 md:px-8 md:py-3 rounded-full font-medium text-sm md:text-base hover:bg-gold/10 transition"
           >
             View More
-          </motion.button>
+          </Link>
       </div>
     </section>
   );
