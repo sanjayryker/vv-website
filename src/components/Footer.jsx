@@ -62,15 +62,17 @@ export const Footer = () => {
             <div className="space-y-4 text-[#444] text-sm">
               <p className="flex items-center gap-3">
                 <Phone size={18} className="text-gold" />
-                +91 98765 43210
+                +91 9384272666
               </p>
               <p className="flex items-center gap-3">
                 <Mail size={18} className="text-gold" />
-                info@vventertainments.com
+                vventertainmentsmedia@gmail.com
               </p>
               <p className="flex items-center gap-3">
                 <MapPin size={18} className="text-gold" />
-                Chennai, Tamil Nadu
+                331 alwarthirunager, <br/>
+Kamaraj Salai, <br/>
+Chennai - 87 <br/>
               </p>
             </div>
           </div>

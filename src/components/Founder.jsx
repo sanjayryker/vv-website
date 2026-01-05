@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 
 export const Founder = ({id}) => {
   return (
+    <>
+    
     <section id={id} className="px-6 py-8 md:py-16 max-w-7xl mx-auto bg-gold scroll-mt-24">
       <div className="grid md:grid-cols-2 gap-10 items-center">
 
@@ -64,5 +66,6 @@ export const Founder = ({id}) => {
 
       </div>
     </section>
+    </>
   );
 };

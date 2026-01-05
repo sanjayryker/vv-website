@@ -6,9 +6,9 @@ import "swiper/css/navigation";
 
 export const Events = () => {
   const services = [
-    { title: "Namma Ooru Vibes", desc: "Madurai", image: "/events1.jpg" },
-    { title: "Namma Ooru Vibes Elite", desc: "Chennai", image: "/events2.jpg" },
-    { title: "Namma Ooru Vibes Chitirai Special", desc: "Madurai", image: "/events3.JPG" },
+    { title: "Namma Ooru Vibes", desc: "Madurai", image: "/event1.jpg" },
+    { title: "Namma Ooru Vibes Elite", desc: "Chennai", image: "/event2.jpg" },
+    { title: "Namma Ooru Vibes Chitirai Special", desc: "Madurai", image: "/event3.JPG" },
     // add more items if you want; nav/buttons show only when services.length > 3
   ];
 

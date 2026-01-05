@@ -4,6 +4,7 @@ import { Footer } from "../components/Footer";
 import { WhatsAppFloat } from "../components/WhatsappFloat";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 /* -----------------------------
    DATA
@@ -39,14 +40,14 @@ export const Contact = () => {
     const form = e.target;
 
     const data = new FormData();
-    data.append("entry.908004017", form.name.value);      // Full Name
-    data.append("entry.949089739", form.email.value);     // Email
-    data.append("entry.1533516579", form.phone.value);    // Contact
-    data.append("entry.1935722808", form.message.value);  // Message
+    data.append("entry.1954950069", form.name.value);      // Full Name
+    data.append("entry.1485610582", form.email.value);     // Email
+    data.append("entry.735075539", form.phone.value);    // Contact
+    data.append("entry.601666674", form.message.value);  // Message
 
     try {
       await fetch(
-        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeI92TlsUn-teVwv1MLPQTy8X8yCIKvlHbLdLuTgGPgYuYVVA/formResponse",
+        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSci5CMkqpmgH5q9mpgeb3jGYt2g1RX3OvxWGWsgtsTnpajmbA/formResponse",
         {
           method: "POST",
           mode: "no-cors",
@@ -222,10 +223,11 @@ export const Contact = () => {
         </div>
       </section>
 
+
       {/* ========================= */}
       {/* CONTACT FORM */}
       {/* ========================= */}
-      <section id="form" className="px-6 py-20 max-w-4xl mx-auto scroll-mt-24">
+      <section className="px-6 py-20 max-w-4xl mx-auto scroll-mt-24">
         <h2 className="text-2xl md:text-3xl font-heading text-dark text-center mb-10">
           Send Us a Message
         </h2>
@@ -275,6 +277,77 @@ export const Contact = () => {
           </button>
         </form>
       </section>
+
+            {/* ========================= */}
+{/* CONTACT INFO STRIP */}
+{/* ========================= */}
+<section className="px-6 mt-5 mb-14 scroll-mt-24 " id="form">
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    viewport={{ once: true }}
+    className="
+      max-w-7xl mx-auto 
+     
+    "
+  >
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+
+      {/* ADDRESS */}
+      <div className="space-y-4">
+        <div className="w-14 h-14 mx-auto rounded-full border border-gold flex items-center justify-center">
+          <MapPin size={22} className="text-gold" />
+        </div>
+
+        <h4 className="font-heading text-lg text-dark">
+          Office Address
+        </h4>
+
+        <p className="text-sm text-[#555] leading-relaxed">
+          331 alwarthirunager <br/> Kamaraj Salai <br/> Chennai - 87
+        </p>
+      </div>
+
+      {/* CALL */}
+      <div className="space-y-4">
+        <div className="w-14 h-14 mx-auto rounded-full border border-gold flex items-center justify-center">
+          <Phone size={22} className="text-gold" />
+        </div>
+
+        <h4 className="font-heading text-lg text-dark">
+          Make a Call
+        </h4>
+
+        <a
+          href="tel:+919876543210"
+          className="text-sm text-[#555] hover:text-gold transition"
+        >
+          +91 9384272666
+        </a>
+      </div>
+
+      {/* EMAIL */}
+      <div className="space-y-4">
+        <div className="w-14 h-14 mx-auto rounded-full border border-gold flex items-center justify-center">
+          <Mail size={22} className="text-gold" />
+        </div>
+
+        <h4 className="font-heading text-lg text-dark">
+          Mail Us
+        </h4>
+
+        <a
+          href="mailto:info@vventertainments.com"
+          className="text-sm text-[#555] hover:text-gold transition break-words"
+        >
+          vventertainmentsmedia@gmail.com
+        </a>
+      </div>
+
+    </div>
+  </motion.div>
+</section>
 
       <WhatsAppFloat />
       <Footer />

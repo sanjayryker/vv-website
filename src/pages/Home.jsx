@@ -14,6 +14,8 @@ import { Trust } from "../components/Trust";
 import { Testimonial1 } from "../components/Testimonial1";
 import { Stats } from "../components/Stats";
 import { Footer } from "../components/Footer";
+import EmbedLink from "../components/EmbedLink";
+
 
 
 export default function Home() {
@@ -24,6 +26,7 @@ export default function Home() {
       <HeroA/>
       <AboutUs id="vv"/>
       <Founder id="founder"/>
+      <EmbedLink/>
       <Events/>
       <Awards/>
       <InternationalEvents/>

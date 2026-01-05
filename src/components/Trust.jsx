@@ -19,7 +19,7 @@ export const Trust = ({id}) => {
               lg:h-[550px]     /* large desktop */
           ">
             <img
-              src="/about1.jpg" 
+              src="/jfc1.jpg" 
               alt="About VV Events"
               className="w-full h-full object-cover"
             />
@@ -41,33 +41,35 @@ export const Trust = ({id}) => {
 
           {/* Big heading */}
           <h2 className="text-xl md:text-4xl text-center md:text-left font-heading text-white leading-tight">
-            Where kindness meets meaningful action.
+            JFC – Joint for Care
           </h2>
 
           {/* Paragraph */}
           <p className="text-[#444] text-sm md:text-base leading-relaxed">
-            At VV Entertainments, we turn your celebrations into beautifully
-            curated experiences. Our team blends creativity, precision and
-            passion to deliver events that feel effortless, elegant and deeply
-            memorable.  
-            <br /><br />
-            From intimate weddings to grand corporate gatherings, every event we
-            create reflects our commitment to excellence and attention to detail.
+            A Trust Dedicated to Humanity <br/>
+At VV entertainment, we believe that true success is measured not just by what we achieve together, but by how many lives we touch along the way. <br/><br/>
+JFC – Joint for Care is our registered non-profit trust that embodies this belief. At the close of every corporate event, family celebration, annual day, or milestone gathering, we joyfully set aside a dedicated portion of our resources to help those who need it most.
+Through JFC, we extend immediate and direct financial support to individuals and families facing unimaginable hardship, including:  
+
           </p>
 
           {/* Bullet points */}
           <div className="space-y-3">
             <div className="flex items-center gap-3">
               <span className="h-2 w-2 rounded-full bg-white"></span>
-              <p className="text-[#555] text-sm">Tailor-made event concepts</p>
+              <p className="text-[#555] text-sm">Victims of natural disasters (floods, cyclones, tsunamis, and earthquakes)</p>
             </div>
             <div className="flex items-center gap-3">
               <span className="h-2 w-2 rounded-full bg-white"></span>
-              <p className="text-[#555] text-sm">Production & theme styling</p>
+              <p className="text-[#555] text-sm">Families who have suddenly lost their primary breadwinner</p>
             </div>
             <div className="flex items-center gap-3">
               <span className="h-2 w-2 rounded-full bg-white"></span>
-              <p className="text-[#555] text-sm">Full planning & seamless execution</p>
+              <p className="text-[#555] text-sm">Critical medical emergencies where treatment costs become a burden</p>
+            </div>
+             <div className="flex items-center gap-3">
+              <span className="h-2 w-2 rounded-full bg-white"></span>
+              <p className="text-[#555] text-sm"> Children at risk of dropping out of school due to financial crises</p>
             </div>
           </div>
 
