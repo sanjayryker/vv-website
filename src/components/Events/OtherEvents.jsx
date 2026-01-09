@@ -24,7 +24,7 @@ export const OtherEvents = () => {
         viewport={{ once: true }}
         className="mb-3 max-w-full pl-3"
       >
-         <p className="text-lg md:text-2xl text-gold pb-0 md:pb-3">Other Events</p>
+        <p className="text-lg md:text-2xl text-gold pb-0 md:pb-3">Other Events</p>
       </motion.div>
 
       <div className="relative">
@@ -63,10 +63,10 @@ export const OtherEvents = () => {
               : false
           }
           slidesPerView={1.15}
-           spaceBetween={0}
+          spaceBetween={0}
           breakpoints={{
-            640: { slidesPerView: 2.2, spaceBetween:16 },
-            1024: { slidesPerView: 3, spaceBetween:16 },
+            640: { slidesPerView: 2.2, spaceBetween: 16 },
+            1024: { slidesPerView: 3, spaceBetween: 16 },
           }}
           className="pb-12 cursor-pointer"
         >
@@ -81,7 +81,12 @@ export const OtherEvents = () => {
                   border border-gold/30 transition-transform duration-300 hover:scale-[1.01]"
               >
                 {/* Image */}
-                <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
 
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/10" />

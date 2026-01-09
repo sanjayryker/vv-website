@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 export const WorldRecords = () => {
   const services = [
@@ -24,7 +25,7 @@ export const WorldRecords = () => {
         viewport={{ once: true }}
         className="mb-3 max-w-full pl-3"
       >
-         <p className="text-lg md:text-2xl text-gold pb-0 md:pb-3">World Records</p>
+        <p className="text-lg md:text-2xl text-gold pb-0 md:pb-3">World Records</p>
       </motion.div>
 
       <div className="relative">
@@ -65,8 +66,8 @@ export const WorldRecords = () => {
           slidesPerView={1.15}
           spaceBetween={0}
           breakpoints={{
-            640: { slidesPerView: 2.2, spaceBetween:16 },
-            1024: { slidesPerView: 3, spaceBetween:16 },
+            640: { slidesPerView: 2.2, spaceBetween: 16 },
+            1024: { slidesPerView: 3, spaceBetween: 16 },
           }}
           className="pb-12 cursor-pointer"
         >
@@ -81,7 +82,12 @@ export const WorldRecords = () => {
                   border border-gold/30 transition-transform duration-300 hover:scale-[1.01]"
               >
                 {/* Image */}
-                <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
 
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/10" />
@@ -96,6 +102,13 @@ export const WorldRecords = () => {
           ))}
         </Swiper>
       </div>
+      {/* <div className="my-3 mt-8 text-center">
+        <Link to='/events'
+            className="border border-gold text-gold px-6 py-2 md:px-8 md:py-3 rounded-full font-medium text-sm md:text-base hover:bg-gold/10 transition"
+          >
+            View More
+          </Link>
+      </div> */}
     </section>
   );
 };

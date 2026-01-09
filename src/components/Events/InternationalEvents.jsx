@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 
 export const InternationalEvents = () => {
   const services = [
-    { title: "Iconic Achievers Awards", desc: "Srilanka", image: "/international1.jpg" },
-    { title: "Utsav Mela", desc: "Texas, USA", image: "/international2.jpg" }
+    { title: "Iconic Achievers Awards", desc: "Srilanka", image: "/int1.jpg" },
+    { title: "Utsav Mela", desc: "Texas, USA", image: "/int2.jpg" }
     // add more items if you want; nav/buttons show only when services.length > 3
   ];
 
@@ -24,7 +24,7 @@ export const InternationalEvents = () => {
         viewport={{ once: true }}
         className="mb-3 max-w-full pl-3"
       >
-         <p className="text-lg md:text-2xl text-gold pb-0 md:pb-3">International Events</p>
+        <p className="text-lg md:text-2xl text-gold pb-0 md:pb-3">International Events</p>
       </motion.div>
 
       <div className="relative">
@@ -65,8 +65,8 @@ export const InternationalEvents = () => {
           slidesPerView={1.15}
           spaceBetween={0}
           breakpoints={{
-            640: { slidesPerView: 2.2, spaceBetween:16 },
-            1024: { slidesPerView: 3, spaceBetween:16 },
+            640: { slidesPerView: 2.2, spaceBetween: 16 },
+            1024: { slidesPerView: 3, spaceBetween: 16 },
           }}
           className="pb-12 cursor-pointer"
         >
@@ -81,7 +81,12 @@ export const InternationalEvents = () => {
                   border border-gold/30 transition-transform duration-300 hover:scale-[1.01]"
               >
                 {/* Image */}
-                <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
 
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/10" />
@@ -98,10 +103,10 @@ export const InternationalEvents = () => {
       </div>
       <div className="my-3 mt-8 text-center">
         <Link to='/events'
-            className="border border-gold text-gold px-6 py-2 md:px-8 md:py-3 rounded-full font-medium text-sm md:text-base hover:bg-gold/10 transition"
-          >
-            View More
-          </Link>
+          className="border border-gold text-gold px-6 py-2 md:px-8 md:py-3 rounded-full font-medium text-sm md:text-base hover:bg-gold/10 transition"
+        >
+          View More
+        </Link>
       </div>
     </section>
   );

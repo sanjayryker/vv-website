@@ -45,6 +45,7 @@ export const MultiCardGrid = () => {
               src={item.image}
               alt={item.title}
               className="absolute inset-0 w-full h-full object-cover"
+              loading="lazy"
             />
 
             {/* Overlay */}

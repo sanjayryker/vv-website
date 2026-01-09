@@ -30,9 +30,9 @@ export default function Home() {
       <Events/>
       <Awards/>
       <InternationalEvents/>
-      {/* <UpcomingEvents/>
-      <WorldRecords/>
-      <OtherEvents/> */}
+      {/* <WorldRecords/> */}
+      {/* <UpcomingEvents/> */}
+      {/* <OtherEvents/> */}
       <Trust id="trust"/>
       <NewspaperCutting/>
       <Testimonial1/>

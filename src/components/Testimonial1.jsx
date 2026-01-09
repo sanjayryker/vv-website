@@ -145,6 +145,7 @@ export const Testimonial1 = () => {
               <img
                 src={testimonials[index].image}
                 className="h-10 w-10 md:w-14 md:h-14 rounded-full object-cover border border-gold/40"
+                loading="lazy"
               />
               <div>
                 <h3 className="text-lg md:text-xl font-heading">{testimonials[index].name}</h3>

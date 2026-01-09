@@ -18,6 +18,9 @@ export default function ScrollToHash() {
           });
         }, 100);
       }
+    } else {
+      // No hash -> Scroll to top
+      window.scrollTo(0, 0);
     }
   }, [location]);
 

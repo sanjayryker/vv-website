@@ -13,7 +13,8 @@ export const GalleryGrid = ({ images, onOpen }) => {
           <img
             src={img}
             alt=""
-            className="w-full h-30 md:h-48 object-cover"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+            loading="lazy"
           />
         </motion.div>
       ))}

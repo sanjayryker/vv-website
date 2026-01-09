@@ -104,83 +104,83 @@ export const Contact = () => {
       </section>
 
       {/* ========================= */}
-{/* UPCOMING EVENT */}
-{/* ========================= */}
-<section id="book" className="px-6 py-20 bg-[#faf7f2] scroll-mt-24">
-  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      {/* UPCOMING EVENT */}
+      {/* ========================= */}
+      <section id="book" className="px-6 py-20 bg-[#faf7f2] scroll-mt-24">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-    {/* EVENT POSTER */}
-    <motion.div
-      initial={{ opacity: 0, x: -30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.7 }}
-      viewport={{ once: true }}
-      className="rounded-2xl overflow-hidden shadow-lg"
-    >
-      <img
-        src="/upcoming-event.jpg"   // 👈 add your poster image here
-        alt="Upcoming Event"
-        className="w-full h-full object-cover"
-      />
-    </motion.div>
+          {/* EVENT POSTER */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            className="rounded-2xl overflow-hidden shadow-lg"
+          >
+            <img
+              src="/upcoming-event.jpg"   // 👈 add your poster image here
+              alt="Upcoming Event"
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
 
-    {/* EVENT DETAILS */}
-    <motion.div
-      initial={{ opacity: 0, x: 30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.7 }}
-      viewport={{ once: true }}
-      className="space-y-5"
-    >
-      <p className="uppercase tracking-[0.25em] text-gold text-sm">
-        Upcoming Event
-      </p>
+          {/* EVENT DETAILS */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            className="space-y-5"
+          >
+            <p className="uppercase tracking-[0.25em] text-gold text-sm">
+              Upcoming Event
+            </p>
 
-      <h2 className="text-3xl md:text-4xl font-heading text-dark">
-        Namma Ooru Vibes – Season 2
-      </h2>
+            <h2 className="text-3xl md:text-4xl font-heading text-dark">
+              Namma Ooru Vibes – Season 2
+            </h2>
 
-      <p className="text-[#555] text-sm md:text-base leading-relaxed">
-        Experience the energy of culture, music and celebration as we bring
-        together unforgettable performances and vibrant moments — crafted
-        exclusively by VV Entertainments.
-      </p>
+            <p className="text-[#555] text-sm md:text-base leading-relaxed">
+              Experience the energy of culture, music and celebration as we bring
+              together unforgettable performances and vibrant moments — crafted
+              exclusively by VV Entertainments.
+            </p>
 
-      {/* EVENT META */}
-      <div className="space-y-2 text-sm text-[#444]">
-        <p>
-          <span className="font-medium text-dark">📍 Venue:</span> Chennai Trade Centre
-        </p>
-        <p>
-          <span className="font-medium text-dark">📅 Date:</span> 28th December 2025
-        </p>
-        <p>
-          <span className="font-medium text-dark">⏰ Time:</span> 6:00 PM onwards
-        </p>
-      </div>
+            {/* EVENT META */}
+            <div className="space-y-2 text-sm text-[#444]">
+              <p>
+                <span className="font-medium text-dark">📍 Venue:</span> Chennai Trade Centre
+              </p>
+              <p>
+                <span className="font-medium text-dark">📅 Date:</span> 28th December 2025
+              </p>
+              <p>
+                <span className="font-medium text-dark">⏰ Time:</span> 6:00 PM onwards
+              </p>
+            </div>
 
-      {/* CTA */}
-      <div className="flex gap-4 pt-4">
-        <a
-          href="https://wa.me/919943160812?text=Hi, I’d like to book tickets for Namma Ooru Vibes."
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gold text-dark px-8 py-3 rounded-full font-medium hover:bg-gold-soft transition "
-        >
-          Book Now
-        </a>
+            {/* CTA */}
+            <div className="flex gap-4 pt-4">
+              <a
+                href="https://wa.me/919943160812?text=Hi, I’d like to book tickets for Namma Ooru Vibes."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gold text-dark px-8 py-3 rounded-full font-medium hover:bg-gold-soft transition "
+              >
+                Book Now
+              </a>
 
-        <a
-          href="/events"
-          className="border border-gold text-gold px-8 py-3 rounded-full hover:bg-gold/10 transition"
-        >
-          View Details
-        </a>
-      </div>
-    </motion.div>
+              <a
+                href="/events"
+                className="border border-gold text-gold px-8 py-3 rounded-full hover:bg-gold/10 transition"
+              >
+                View Details
+              </a>
+            </div>
+          </motion.div>
 
-  </div>
-</section>
+        </div>
+      </section>
 
 
       {/* ========================= */}
@@ -240,6 +240,13 @@ export const Contact = () => {
             required
           />
 
+          <img
+            src="/world-map.png"
+            alt="World Map"
+            className="absolute top-0 right-0 w-3/4 md:w-1/2 opacity-10 pointer-events-none"
+            loading="lazy"
+          />
+
           <input
             name="email"
             type="email"
@@ -278,76 +285,76 @@ export const Contact = () => {
         </form>
       </section>
 
-            {/* ========================= */}
-{/* CONTACT INFO STRIP */}
-{/* ========================= */}
-<section className="px-6 mt-5 mb-14 scroll-mt-24 " id="form">
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6 }}
-    viewport={{ once: true }}
-    className="
+      {/* ========================= */}
+      {/* CONTACT INFO STRIP */}
+      {/* ========================= */}
+      <section className="px-6 mt-5 mb-14 scroll-mt-24 " id="form">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="
       max-w-7xl mx-auto 
      
     "
-  >
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-
-      {/* ADDRESS */}
-      <div className="space-y-4">
-        <div className="w-14 h-14 mx-auto rounded-full border border-gold flex items-center justify-center">
-          <MapPin size={22} className="text-gold" />
-        </div>
-
-        <h4 className="font-heading text-lg text-dark">
-          Office Address
-        </h4>
-
-        <p className="text-sm text-[#555] leading-relaxed">
-          331 alwarthirunager <br/> Kamaraj Salai <br/> Chennai - 87
-        </p>
-      </div>
-
-      {/* CALL */}
-      <div className="space-y-4">
-        <div className="w-14 h-14 mx-auto rounded-full border border-gold flex items-center justify-center">
-          <Phone size={22} className="text-gold" />
-        </div>
-
-        <h4 className="font-heading text-lg text-dark">
-          Make a Call
-        </h4>
-
-        <a
-          href="tel:+919876543210"
-          className="text-sm text-[#555] hover:text-gold transition"
         >
-          +91 9384272666
-        </a>
-      </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
 
-      {/* EMAIL */}
-      <div className="space-y-4">
-        <div className="w-14 h-14 mx-auto rounded-full border border-gold flex items-center justify-center">
-          <Mail size={22} className="text-gold" />
-        </div>
+            {/* ADDRESS */}
+            <div className="space-y-4">
+              <div className="w-14 h-14 mx-auto rounded-full border border-gold flex items-center justify-center">
+                <MapPin size={22} className="text-gold" />
+              </div>
 
-        <h4 className="font-heading text-lg text-dark">
-          Mail Us
-        </h4>
+              <h4 className="font-heading text-lg text-dark">
+                Office Address
+              </h4>
 
-        <a
-          href="mailto:info@vventertainments.com"
-          className="text-sm text-[#555] hover:text-gold transition break-words"
-        >
-          vventertainmentsmedia@gmail.com
-        </a>
-      </div>
+              <p className="text-sm text-[#555] leading-relaxed">
+                331 alwarthirunager <br /> Kamaraj Salai <br /> Chennai - 87
+              </p>
+            </div>
 
-    </div>
-  </motion.div>
-</section>
+            {/* CALL */}
+            <div className="space-y-4">
+              <div className="w-14 h-14 mx-auto rounded-full border border-gold flex items-center justify-center">
+                <Phone size={22} className="text-gold" />
+              </div>
+
+              <h4 className="font-heading text-lg text-dark">
+                Make a Call
+              </h4>
+
+              <a
+                href="tel:+919876543210"
+                className="text-sm text-[#555] hover:text-gold transition"
+              >
+                +91 9384272666
+              </a>
+            </div>
+
+            {/* EMAIL */}
+            <div className="space-y-4">
+              <div className="w-14 h-14 mx-auto rounded-full border border-gold flex items-center justify-center">
+                <Mail size={22} className="text-gold" />
+              </div>
+
+              <h4 className="font-heading text-lg text-dark">
+                Mail Us
+              </h4>
+
+              <a
+                href="mailto:info@vventertainments.com"
+                className="text-sm text-[#555] hover:text-gold transition break-words"
+              >
+                vventertainmentsmedia@gmail.com
+              </a>
+            </div>
+
+          </div>
+        </motion.div>
+      </section>
 
       <WhatsAppFloat />
       <Footer />

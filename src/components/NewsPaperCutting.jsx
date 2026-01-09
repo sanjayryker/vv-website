@@ -140,7 +140,7 @@ export const NewspaperCutting = () => {
               cursor-pointer z-20"
             onClick={() => setLightbox(index)} // OPEN LIGHTBOX
           >
-            <img src={cuts[index].src} className="w-full h-full object-cover" />
+            <img src={cuts[index].src} className="w-full h-full object-cover" loading="lazy" />
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/60"></div>
 

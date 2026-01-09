@@ -7,12 +7,12 @@ import "swiper/css/navigation";
 export const Awards = () => {
   const services = [
     { title: "Global Women Icon Award", desc: "American College, Madurai", image: "/award1.JPG" },
-    { title: "Joint for care social service award", desc: "American College, Madurai", image: "/award1.jpg" },
-    { title: "Life Time Achievement Award", desc: "Meenakshi College, Madurai", image: "/award1.jpg" },
-    { title: "Life Time Achievement Award", desc: "American College, Madurai", image: "/award1.JPG" },
-    { title: "Thamaya women warriors award", desc: "Virudhunagar", image: "/award5.JPG" },
-    { title: "Sifterra", desc: "Chennai", image: "/award6.jpg" },
-    { title: "Chennai Award Show", desc: "Aerohub mall, Chennai", image: "/award7.JPG" },
+    { title: "Joint for care social service award", desc: "Aerohub mall, Chennai", image: "/award2.jpg" },
+    { title: "Life Time Achievement Award", desc: "American College, Madurai", image: "/award3.jpg" },
+    { title: "Thamaya women warriors award", desc: "Virudhunagar", image: "/award4.JPG" },
+    { title: "Sifterra", desc: "Chennai", image: "/award5.jpg" },
+    { title: "Chennai Award Show", desc: "Aerohub mall, Chennai", image: "/award6.JPG" },
+    { title: "Future Icon Award", desc: "Aerohub mall, Chennai", image: "/award7.jpg" }
   ];
 
   const showNav = services.length > 3;
@@ -27,7 +27,7 @@ export const Awards = () => {
         viewport={{ once: true }}
         className="mb-3 max-w-full pl-3"
       >
-         <p className="text-lg md:text-2xl text-gold pb-0 md:pb-3">Award Shows</p>
+        <p className="text-lg md:text-2xl text-gold pb-0 md:pb-3">Award Shows</p>
       </motion.div>
 
       <div className="relative">
@@ -68,8 +68,8 @@ export const Awards = () => {
           slidesPerView={1.15}
           spaceBetween={0}
           breakpoints={{
-            640: { slidesPerView: 2.2, spaceBetween:16 },
-            1024: { slidesPerView: 3, spaceBetween:16 },
+            640: { slidesPerView: 2.2, spaceBetween: 16 },
+            1024: { slidesPerView: 3, spaceBetween: 16 },
           }}
           className="pb-12 cursor-pointer"
         >
@@ -84,7 +84,12 @@ export const Awards = () => {
                   border border-gold/30 transition-transform duration-300 hover:scale-[1.01]"
               >
                 {/* Image */}
-                <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
 
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/10" />

@@ -87,10 +87,9 @@ export const Lightbox = ({ images, index, onClose, setIndex }) => {
               className={`
                 shrink-0 rounded-lg overflow-hidden
                 border-2 transition
-                ${
-                  i === index
-                    ? "border-gold scale-105"
-                    : "border-transparent opacity-70 hover:opacity-100"
+                ${i === index
+                  ? "border-gold scale-105"
+                  : "border-transparent opacity-70 hover:opacity-100"
                 }
               `}
             >
@@ -98,6 +97,7 @@ export const Lightbox = ({ images, index, onClose, setIndex }) => {
                 src={img}
                 alt=""
                 className="h-16 w-24 object-cover"
+                loading="lazy"
               />
             </button>
           ))}

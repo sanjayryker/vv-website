@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export const AboutUs = ({id}) => {
+export const AboutUs = ({ id }) => {
   return (
     <section id={id} className=" px-6  pb-16 md:py-24 max-w-7xl mx-auto scroll-mt-24">
       <div className="grid md:grid-cols-2 gap-10 items-center">
@@ -15,13 +15,14 @@ export const AboutUs = ({id}) => {
           <div className="overflow-hidden rounded-2xl hidden 
                 h-64             /* mobile */
                 sm:h-72          
-                md:h-96 md:block         /* tablet / small laptop */
-                lg:h-[550px]      /* large desktop */
+                md:h-92 md:block         /* tablet / small laptop */
+                lg:h-[480px]      /* large desktop */
             ">
             <img
-              src="/about1.jpg" 
-              alt="About VV Events"
-              className="w-full h-full object-cover"
+              src="/about1.jpg"
+              alt="Events"
+              className="w-full h-full object-cover rounded-2xl shadow-2xl"
+              loading="lazy"
             />
           </div>
         </motion.div>

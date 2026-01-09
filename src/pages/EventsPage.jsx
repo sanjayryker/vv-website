@@ -6,14 +6,57 @@ import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
 const vibesImages = [
-  "/event1.jpg",
-  "/event2.jpg",
-  "/event3.JPG",
-  "/event4.JPG",
-  "/event5.JPG",
-  "/event6.JPG",
+  "/vibe1.JPG",
+  "/vibe11.JPG",
+  "/vibe2.JPG",
+  "/vibe6.jpg",
+  "/vibe10.JPG",
+  "/vibe3.JPG",
+  "/vibe4.JPG",
+  "/vibe5.JPG",
+  "/vibe7.JPG",
+  "/vibe8.JPG",
+  "/vibe9.JPG",
+  "/vibe12.JPG",
 ];
 
+const awardsImages = [
+  "/award1.JPG",
+  "/award2.jpg",
+  "/award3.jpg",
+  "/award4.JPG",
+  "/award5.jpg",
+  "/award6.JPG",
+  "/award7.jpg",
+  "/award8.jpg",
+  "/award9.JPG",
+  "/award10.JPG",
+];
+
+const intImages = [
+  "int1.jpg",
+  "int2.jpg",
+  "int3.jpg",
+  "int4.jpg",
+  "int5.jpg",
+  "int6.jpg",
+  "int7.jpg",
+  "int8.jpg",
+  "int9.jpg",
+]
+
+const records = [
+  "/record1.jpg",
+  "/record2.jpg",
+  "/record3.jpg",
+  "/record4.jpg",
+  "/record5.jpg",
+  "/record6.JPG",
+  "/record7.jpg",
+  "/record8.jpg",
+  "/record9.JPG",
+  "/record10.jpg",
+]
 /* -----------------------------
    CATEGORY NAV
 ----------------------------- */
@@ -80,13 +123,13 @@ export const EventsPage = () => {
           title="Namma Ooru Vibes"
           intro="Where tradition meets modern celebration."
           about={<>
-          <p> people the experience where tradition meets today's modern events, Namma Ooru Vibes is by VV Entertainments. <br/>We play all our cards- live music, food, dance floor and exclusive WOW factors like dhol, chendamelam performances and many more from the creative cultural arena.</p>
-          <ul className="mt-4 space-y-2 list-disc list-inside text-[#555]">
+            <p> people the experience where tradition meets today's modern events, Namma Ooru Vibes is by VV Entertainments. <br />We play all our cards- live music, food, dance floor and exclusive WOW factors like dhol, chendamelam performances and many more from the creative cultural arena.</p>
+            <ul className="mt-4 space-y-2 list-disc list-inside text-[#555]">
               <li> <strong>Namma Ooru Vibes</strong> - Madurai.</li>
               <li><strong>Namma Ooru Vibes Elite</strong> - Chennai.</li>
               <li><strong>Namma Ooru Vibes Chitirai Special</strong> - Madurai.</li>
             </ul>
-            </>}
+          </>}
           gallery={vibesImages.slice(0, 4)}   // 👈 ONLY 4 SHOWN
           onImageClick={(i) => openViewer(vibesImages, i)} // 👈 ALL INSIDE LIGHTBOX
         />
@@ -96,42 +139,42 @@ export const EventsPage = () => {
           title="Award Shows"
           intro="Honoring excellence across industries."
           about={<>
-          <p>
-            Celebrating excellence, leadership and impact, VV Entertainments
-            curates prestigious award shows that honor inspiring individuals
-            and organizations across diverse fields.<br/> From women empowerment
-            and social service recognition to industry excellence and lifetime
-            achievements, our award ceremonies blend elegance, meaningful
-            storytelling and flawless execution.
-          </p>
-          <ul className="mt-4 space-y-2 list-disc list-inside text-[#555]">
-            <li>
-              <strong>Global Women Icon Awards</strong> – American College, Madurai
-            </li>
-            <li>
-              <strong>Joint for Care Social Service Award</strong> – American College,
-              Madurai
-            </li>
-            <li>
-              <strong>Lifetime Achievement Award</strong> – American College, Madurai
-            </li>
-            <li>
-              <strong>Lifetime Achievement Award</strong> – Meenakshi Arts & Science
-              College, Chennai
-            </li>
-            <li>
-              <strong>Thamaya Women Warriors Award</strong> – Virudhunagar
-            </li>
-            <li>
-              <strong>SITARA – Grounds of Excellence Awards</strong> – Chennai
-            </li>
-            <li>
-              <strong>Chennai Award Show</strong> – Aerohub Mall, Chennai
-            </li>
-          </ul>
+            <p>
+              Celebrating excellence, leadership and impact, VV Entertainments
+              curates prestigious award shows that honor inspiring individuals
+              and organizations across diverse fields.<br /> From women empowerment
+              and social service recognition to industry excellence and lifetime
+              achievements, our award ceremonies blend elegance, meaningful
+              storytelling and flawless execution.
+            </p>
+            <ul className="mt-4 space-y-2 list-disc list-inside text-[#555]">
+              <li>
+                <strong>Global Women Icon Awards</strong> – American College, Madurai
+              </li>
+              <li>
+                <strong>Joint for Care Social Service Award</strong> – American College,
+                Madurai
+              </li>
+              <li>
+                <strong>Lifetime Achievement Award</strong> – American College, Madurai
+              </li>
+              <li>
+                <strong>Lifetime Achievement Award</strong> – Meenakshi Arts & Science
+                College, Chennai
+              </li>
+              <li>
+                <strong>Thamaya Women Warriors Award</strong> – Virudhunagar
+              </li>
+              <li>
+                <strong>Sifterra – Grounds of Excellence Awards</strong> – Chennai
+              </li>
+              <li>
+                <strong>Chennai Award Show</strong> – Aerohub Mall, Chennai
+              </li>
+            </ul>
           </>}
-          gallery={vibesImages.slice(0, 4)}   
-          onImageClick={(i) => openViewer(vibesImages, i)} 
+          gallery={awardsImages.slice(0, 4)}
+          onImageClick={(i) => openViewer(awardsImages, i)}
         />
 
         <EventCategory
@@ -143,7 +186,7 @@ export const EventsPage = () => {
               <p>
                 Expanding beyond borders, VV Entertainments proudly curates
                 international award shows and cultural festivals that celebrate
-                global excellence, talent and community spirit.<br/> Our international
+                global excellence, talent and community spirit.<br /> Our international
                 events blend cultural diversity, premium production and engaging
                 experiences, creating powerful platforms that connect achievers
                 and audiences worldwide.
@@ -184,8 +227,8 @@ export const EventsPage = () => {
               </ul>
             </>
           }
-          gallery={vibesImages.slice(0, 4)}   // 👈 ONLY 4 SHOWN
-          onImageClick={(i) => openViewer(vibesImages, i)} 
+          gallery={intImages.slice(0, 4)}   // 👈 ONLY 4 SHOWN
+          onImageClick={(i) => openViewer(intImages, i)}
         />
 
         <EventCategory
@@ -197,7 +240,7 @@ export const EventsPage = () => {
               <p>
                 Creating history through powerful collective participation,
                 VV Entertainments proudly executes world record events that
-                inspire unity, awareness and social impact.<br/> Each record attempt
+                inspire unity, awareness and social impact.<br /> Each record attempt
                 is thoughtfully designed, flawlessly coordinated and driven by
                 a strong purpose — leaving behind milestones that resonate far
                 beyond the moment.
@@ -220,30 +263,26 @@ export const EventsPage = () => {
             </>
           }
 
-          gallery={vibesImages.slice(0, 4)}   // 👈 ONLY 4 SHOWN
-          onImageClick={(i) => openViewer(vibesImages, i)}
+          gallery={records.slice(0, 4)}   // 👈 ONLY 4 SHOWN
+          onImageClick={(i) => openViewer(records, i)}
         />
 
         <EventCategory
           id="upcoming"
-          title="Upcoming Events"
-          intro="What’s next?"
+          title="ShortFilm Contest"
+          intro="Future Directors and Filmmakers"
           about={
             <>
               <p>
-                Looking ahead with purpose and creativity, VV Entertainments
-                continues to design impactful upcoming events that celebrate
-                voices, talent and innovation. <br/>From meaningful world record
-                initiatives and creative film platforms to lifestyle showcases
-                and brand launches, our upcoming events promise powerful
-                experiences driven by vision and excellence.
+                Driven by purpose and creativity, VV Entertainments successfully conducted a short film contest that celebrated storytelling, talent, and cinematic innovation.
+The event provided a powerful platform for emerging filmmakers to showcase original narratives, creative vision, and impactful voices, reinforcing our commitment to meaningful artistic expression and excellence.
               </p>
 
               <ul className="mt-4 space-y-3 list-disc list-inside text-[#555]">
-                <li>
+                {/* <li>
                   <strong>Upcoming World Record:</strong> Stop Violence Against Her –
                   <em> Many Faces, One Voice</em> (December 17)
-                </li>
+                </li> */}
 
                 <li>
                   <strong>Lumiere Short Film Contest – Pandiyas Special</strong>
@@ -264,14 +303,10 @@ export const EventsPage = () => {
                   <strong>Lumiere Short Film Contest – Pallavas Special</strong>
                   (December 18)
                 </li>
-
-                <li>
-                  <strong>Makeup Contest & Fashion Show</strong> (December 27)
-                </li>
               </ul>
             </>
           }
-          gallery={vibesImages.slice(0, 4)}   // 👈 ONLY 4 SHOWN
+          gallery={vibesImages.slice(0, 4)}  
           onImageClick={(i) => openViewer(vibesImages, i)}
         />
 
