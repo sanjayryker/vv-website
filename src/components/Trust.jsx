@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export const Trust = ({id}) => {
   return (
-    <section id={id} className="px-6 py-4 md:py-16 max-w-7xl mx-auto bg-gold relative scroll-mt-24">
+    <section id={id} className="px-6 py-4 md:py-12 md:mt-10 max-w-7xl mx-auto bg-gold relative scroll-mt-24">
       <div className="grid md:grid-cols-2 gap-10 items-center">
 
         {/* LEFT IMAGE */}
@@ -48,7 +48,7 @@ export const Trust = ({id}) => {
           <p className="text-[#444] text-sm md:text-base leading-relaxed">
             A Trust Dedicated to Humanity <br/>
 At VV entertainment, we believe that true success is measured not just by what we achieve together, but by how many lives we touch along the way. <br/><br/>
-JFC – Joint for Care is our registered non-profit trust that embodies this belief. At the close of every corporate event, family celebration, annual day, or milestone gathering, we joyfully set aside a dedicated portion of our resources to help those who need it most.
+JFC – Joint for Care was started in 2018 as a registered non-profit trust under the Indian Trusts Act embodies this belief. At the close of every corporate event, family celebration, annual day, or milestone gathering, we joyfully set aside a dedicated portion of our resources to help those who need it most.
 Through JFC, we extend immediate and direct financial support to individuals and families facing unimaginable hardship, including:  
 
           </p>
@@ -77,13 +77,24 @@ Through JFC, we extend immediate and direct financial support to individuals and
           <motion.button
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
-            className="border border-gold text-gold px-6 py-2 md:px-8 md:py-3 rounded-full font-medium text-sm md:text-base hover:bg-gold/10 transition"
+            className="border mt-4 md:mt-10 block mx-auto cursor-pointer border-red text-gold bg-white 
+             px-6 py-2 md:px-8 md:py-3 rounded-full font-medium 
+             text-sm md:text-base transition md:hidden"
           >
-            Learn More
+            Join Hands for Care
           </motion.button>
         </motion.div>
 
       </div>
+      <motion.button
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+            className="border mt-4 md:mt-10 hidden mx-auto cursor-pointer border-red text-gold bg-white 
+             px-6 py-2 md:px-8 md:py-3 rounded-full font-medium 
+             text-sm md:text-base transition md:block "
+          >
+            Join Hands for Care
+          </motion.button>
     </section>
   );
 };

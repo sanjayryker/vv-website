@@ -47,11 +47,7 @@ export const Founder = ({id}) => {
 
           {/* Paragraph */}
           <p className="text-[#444] text-sm md:text-base leading-relaxed">
-            Dr. Vijay Vishwa is a known face in the South Indian film and entertainment circuit. 
-            With strong roots in media, performance arts, and public engagement, he carries an understanding of 
-            what captivates a crowd and transforms events into unforgettable experiences, blending artistic 
-            vision with cultural resonance to create moments that truly connect with audiences.
-
+            Dr. Vijay Vishwa is a known face in the South Indian film and entertainment circuit. With strong roots in media, performance arts, and public engagement, he carries an understanding of what captivates a crowd and transforms events into unforgettable experiences. Alongside his creative journey, he has been actively involved in charitable work since 2004, blending artistic vision with cultural resonance to create moments that truly connect with audiences.
           </p>
 
           {/* Gold decorative line */}

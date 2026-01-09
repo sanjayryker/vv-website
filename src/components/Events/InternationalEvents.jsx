@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export const InternationalEvents = () => {
   const services = [
     { title: "Iconic Achievers Awards", desc: "Srilanka", image: "/international1.jpg" },
-    { title: "Utsav Mela", desc: "Texac, USA", image: "/international2.jpg" }
+    { title: "Utsav Mela", desc: "Texas, USA", image: "/international2.jpg" }
     // add more items if you want; nav/buttons show only when services.length > 3
   ];
 

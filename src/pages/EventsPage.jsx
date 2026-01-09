@@ -130,8 +130,8 @@ export const EventsPage = () => {
             </li>
           </ul>
           </>}
-          gallery={vibesImages.slice(0, 4)}   // 👈 ONLY 4 SHOWN
-          onImageClick={(i) => openViewer(vibesImages, i)} // 👈 ALL INSIDE LIGHTBOX
+          gallery={vibesImages.slice(0, 4)}   
+          onImageClick={(i) => openViewer(vibesImages, i)} 
         />
 
         <EventCategory
@@ -157,7 +157,7 @@ export const EventsPage = () => {
                     <li>Global Women Icon Awards (GWIA)</li>
                     <li>BICON Awards</li>
                     <li>Future Icon Awards</li>
-                    <li>JFC Awards</li>
+                    <li>JFC Social Awards</li>
                     <li>Lifetime Achievement Award</li>
                   </ul>
                 </li>
@@ -169,7 +169,7 @@ export const EventsPage = () => {
                     <li>Global Women Icon Awards (GWIA)</li>
                     <li>BICON Awards</li>
                     <li>Future Icon Awards</li>
-                    <li>JFC Awards</li>
+                    <li>JFC Social Awards</li>
                     <li>Lifetime Achievement Award</li>
                   </ul>
 

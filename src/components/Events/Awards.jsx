@@ -11,7 +11,7 @@ export const Awards = () => {
     { title: "Life Time Achievement Award", desc: "Meenakshi College, Madurai", image: "/award1.jpg" },
     { title: "Life Time Achievement Award", desc: "American College, Madurai", image: "/award1.JPG" },
     { title: "Thamaya women warriors award", desc: "Virudhunagar", image: "/award5.JPG" },
-    { title: "Siftara", desc: "Chennai", image: "/award6.JPG" },
+    { title: "Sifterra", desc: "Chennai", image: "/award6.jpg" },
     { title: "Chennai Award Show", desc: "Aerohub mall, Chennai", image: "/award7.JPG" },
   ];
 

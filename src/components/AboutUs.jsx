@@ -19,7 +19,7 @@ export const AboutUs = ({id}) => {
                 lg:h-[550px]      /* large desktop */
             ">
             <img
-              src="/about1.JPG" 
+              src="/about1.jpg" 
               alt="About VV Events"
               className="w-full h-full object-cover"
             />
@@ -46,10 +46,7 @@ export const AboutUs = ({id}) => {
 
           {/* Paragraph */}
           <p className="text-[#444] text-sm md:text-base leading-relaxed">
-            At VV Entertainments, we turn your celebrations into beautifully
-            curated experiences. Our team blends creativity, precision and
-            passion to deliver events that feel effortless, elegant and deeply
-            memorable.  
+            Founded in 2018, VV Entertainments turns celebrations into beautifully curated experiences. Our team blends creativity, precision, and passion to deliver events that feel effortless, elegant, and deeply memorable.
           </p>
 
           {/* Bullet points */}
