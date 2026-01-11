@@ -19,7 +19,7 @@ export const AboutUs = ({ id }) => {
                 lg:h-[480px]      /* large desktop */
             ">
             <img
-              src="/about1.jpg"
+              src="/aboutus1.jpg"
               alt="Events"
               className="w-full h-full object-cover rounded-2xl shadow-2xl"
               loading="lazy"
