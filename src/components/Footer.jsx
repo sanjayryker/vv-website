@@ -51,6 +51,12 @@ export const Footer = () => {
               >
                 <Youtube size={22} />
               </a>
+              <a
+                href="mailto:vventertainmentsmedia@gmail.com"
+                className="w-11 h-11 bg-gold rounded-full flex items-center justify-center cursor-pointer text-white hover:bg-white hover:text-gold transition-colors duration-300"
+              >
+                <Mail size={20} />
+              </a>
             </div>
           </div>
 

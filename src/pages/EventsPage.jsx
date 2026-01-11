@@ -57,6 +57,14 @@ const records = [
   "/record9.JPG",
   "/record10.jpg",
 ]
+
+const shortFilm = [
+  "/short1.jpg",
+  "/short2.jpg",
+  "/short3.jpg",
+  "/short4.jpg",
+  "/short5.JPG",
+]
 /* -----------------------------
    CATEGORY NAV
 ----------------------------- */
@@ -306,8 +314,8 @@ The event provided a powerful platform for emerging filmmakers to showcase origi
               </ul>
             </>
           }
-          gallery={vibesImages.slice(0, 4)}  
-          onImageClick={(i) => openViewer(vibesImages, i)}
+          gallery={shortFilm.slice(0, 4)}  
+          onImageClick={(i) => openViewer(shortFilm, i)}
         />
 
         {/* LIGHTBOX */}
