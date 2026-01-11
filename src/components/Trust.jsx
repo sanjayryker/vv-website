@@ -37,17 +37,16 @@ export const Trust = ({ id }) => {
         >
           {/* Gold small title */}
           <p className="uppercase text-center md:text-left text-3xl md:text-xl text-dark">
-            Our Trust - JFC
+            Our Trust - JFC (Joint for Care)
           </p>
 
           {/* Big heading */}
           <h2 className="text-xl md:text-4xl text-center md:text-left font-heading text-white leading-tight">
-            JFC – Joint for Care
+            A Trust Dedicated to Humanity.
           </h2>
 
           {/* Paragraph */}
           <p className="text-[#444] text-sm md:text-base leading-relaxed">
-            A Trust Dedicated to Humanity. <br />
             At VV Entertainment, we believe true success is not only measured by the events we create, but by the lives we uplift along the way. JFC – Joint for Care is our registered non-profit trust, started in 2008 under the Indian Trusts Act, created with a mission of service, compassion, and humanity. <br />
             At the close of every corporate event, family celebration, annual day, or milestone gathering, we proudly dedicate a portion of our resources towards helping those in need. Through JFC, we provide immediate and direct financial support to
           </p>
