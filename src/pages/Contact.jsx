@@ -11,8 +11,13 @@ import { MapPin, Phone, Mail } from "lucide-react";
 ----------------------------- */
 const proposalOptions = [
   {
+    title: "Register for Event",
+    desc: "Upcoming event registeration.",
+    msg: "Hi, I’d like to register for an event.",
+  },
+  {
     title: "Request Event Proposal",
-    desc: "Weddings, concerts, corporate & private events.",
+    desc: "Corporate & private events.",
     msg: "Hi, I’d like to request an event proposal.",
   },
   {
@@ -165,14 +170,14 @@ export const Contact = () => {
                 href="https://wa.me/919943160812?text=Hi, I’d like to book tickets for Namma Ooru Vibes."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gold text-dark px-8 py-3 rounded-full font-medium hover:bg-gold-soft transition "
+                className="bg-gold items-center text-center text-sm md:text-base text-white px-4 py-2 md:px-8 md:py-3 rounded-full font-medium hover:bg-gold-soft transition "
               >
                 Book Now
               </a>
 
               <a
                 href="/events"
-                className="border border-gold text-gold px-8 py-3 rounded-full hover:bg-gold/10 transition"
+                className="border items-center text-center text-sm md:text-base border-gold text-gold px-4 py-2 md:px-8 md:py-3 rounded-full hover:bg-gold/10 transition"
               >
                 View Details
               </a>
@@ -192,7 +197,7 @@ export const Contact = () => {
             Request Proposal
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             {proposalOptions.map((o, i) => (
               <motion.div
                 key={i}
@@ -201,7 +206,7 @@ export const Contact = () => {
                 whileHover={{ y: -8 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-2xl p-8 text-center"
+                className="bg-white rounded-2xl p-4 md:p-8 text-center"
               >
                 <h3 className="text-xl font-heading text-dark">{o.title}</h3>
 
@@ -213,7 +218,7 @@ export const Contact = () => {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-6 border border-gold text-gold px-6 py-2 rounded-full hover:bg-gold hover:text-dark transition"
+                  className="inline-block text-sm md:text-base mt-6 border border-gold text-gold px-6 py-2 rounded-full hover:bg-gold hover:text-dark transition"
                 >
                   Get in Touch
                 </a>
@@ -271,7 +276,7 @@ export const Contact = () => {
           <button
             type="submit"
             disabled={loading}
-            className="block mx-auto bg-gold text-dark py-3 w-56 md:w-64 rounded-full font-medium hover:bg-gold-soft transition flex items-center justify-center gap-2 disabled:opacity-70 cursor-pointer"
+            className="block mx-auto bg-gold text-white py-3 w-56 md:w-64 rounded-full font-medium hover:bg-gold-soft transition flex items-center justify-center gap-2 disabled:opacity-70 cursor-pointer"
           >
             {loading ? (
               <>
