@@ -16,7 +16,7 @@ export const EventCategory = ({
     >
       {/* DESKTOP GRID */}
       <div className="grid md:grid-cols-2 gap-10 items-start">
-        
+
         {/* LEFT CONTENT */}
         <div>
           <motion.h2
@@ -32,6 +32,9 @@ export const EventCategory = ({
 
           <div className="text-[#555] text-sm md:text-base leading-relaxed">
             {about}
+            <p className="mt-3 text-gold text-xs md:text-sm italic">
+              * Click on images to see more
+            </p>
           </div>
         </div>
 
