@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export const AboutUs = ({ id }) => {
   return (
-    <section id={id} className=" px-6  pb-16 md:py-24 max-w-7xl mx-auto scroll-mt-24">
+    <section id={id} className=" px-6 pt-8 pb-16 md:py-24 max-w-7xl mx-auto scroll-mt-24">
       <div className="grid md:grid-cols-2 gap-10 items-center">
 
         {/* LEFT IMAGE */}
@@ -12,8 +12,8 @@ export const AboutUs = ({ id }) => {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <div className="overflow-hidden rounded-2xl hidden 
-                h-64             /* mobile */
+          <div className="overflow-hidden rounded-2xl  
+                h-56             /* mobile */
                 sm:h-72          
                 md:h-92 md:block         /* tablet / small laptop */
                 lg:h-[480px]      /* large desktop */
@@ -47,11 +47,14 @@ export const AboutUs = ({ id }) => {
 
           {/* Paragraph */}
           <p className="text-[#444] text-sm md:text-base leading-relaxed">
-            Founded in 2018, VV Entertainments turns celebrations into beautifully curated experiences. Our team blends creativity, precision, and passion to deliver events that feel effortless, elegant, and deeply memorable.
+            VV Entertainment, established in 2024, is a professional event management and entertainment service provider specializing in corporate events. We bring creativity, energy, and flawless execution to
+            every event—whether it’s a formal corporate gathering or a high-energy celebration.<br />
+            We focus on creating memorable experiences through well-planned coordination, premium entertainment, and smooth event flow. Our team ensures every detail is handled with professionalism, so clients can enjoy stress-free events from start to finish.<br />
+            At VV Entertainment, we believe every event should be impactful, engaging, and unforgettable.
           </p>
 
           {/* Bullet points */}
-          <div className="space-y-3">
+          {/* <div className="space-y-3">
             <div className="flex items-center gap-3">
               <span className="h-2 w-2 rounded-full bg-gold"></span>
               <p className="text-[#555] text-sm">Tailor-made event concepts</p>
@@ -64,7 +67,7 @@ export const AboutUs = ({ id }) => {
               <span className="h-2 w-2 rounded-full bg-gold"></span>
               <p className="text-[#555] text-sm">Full planning & seamless execution</p>
             </div>
-          </div>
+          </div> */}
 
           {/* Button */}
           {/* <motion.button

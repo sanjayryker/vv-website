@@ -27,13 +27,28 @@ export const Footer = () => {
             </p>
 
             <div className="flex gap-4 pt-2">
-              <a className="w-11 h-11 bg-gold rounded-full flex items-center justify-center text-white">
+              <a
+                href="https://www.instagram.com/vv_entertainments_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-11 h-11 bg-gold rounded-full flex items-center justify-center cursor-pointer text-white hover:bg-white hover:text-gold transition-colors duration-300"
+              >
                 <Instagram size={20} />
               </a>
-              <a className="w-11 h-11 bg-gold rounded-full flex items-center justify-center text-white">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-11 h-11 bg-gold rounded-full flex items-center justify-center cursor-pointer text-white hover:bg-white hover:text-gold transition-colors duration-300"
+              >
                 <Facebook size={20} />
               </a>
-              <a className="w-11 h-11 bg-gold rounded-full flex items-center justify-center text-white">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-11 h-11 bg-gold rounded-full flex items-center justify-center cursor-pointer text-white hover:bg-white hover:text-gold transition-colors duration-300"
+              >
                 <Youtube size={22} />
               </a>
             </div>
@@ -48,7 +63,7 @@ export const Footer = () => {
             <ul className="space-y-3 text-[#444] text-sm">
               <li><a href="/" className="hover:text-gold">Home</a></li>
               <li><a href="/events" className="hover:text-gold">Events</a></li>
-              <li><a href="/trust" className="hover:text-gold">Our Trust</a></li>
+              <li><a href="/#trust" className="hover:text-gold">Our Trust</a></li>
               <li><a href="/contact" className="hover:text-gold">Contact</a></li>
             </ul>
           </div>
@@ -70,9 +85,9 @@ export const Footer = () => {
               </p>
               <p className="flex items-center gap-3">
                 <MapPin size={18} className="text-gold" />
-                331 alwarthirunager, <br/>
-Kamaraj Salai, <br/>
-Chennai - 87 <br/>
+                331 alwarthirunager, <br />
+                Kamaraj Salai, <br />
+                Chennai - 87 <br />
               </p>
             </div>
           </div>

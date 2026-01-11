@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export const Trust = ({ id }) => {
   return (
-    <section id={id} className="px-6 py-4 md:py-12 md:mt-10 max-w-7xl mx-auto bg-gold relative scroll-mt-24">
+    <section id={id} className="px-6 py-6 md:py-12 md:mt-10 max-w-7xl mx-auto bg-gold relative scroll-mt-24">
       <div className="grid md:grid-cols-2 gap-10 items-center">
 
         {/* LEFT IMAGE */}
@@ -13,7 +13,7 @@ export const Trust = ({ id }) => {
           viewport={{ once: true }}
         >
           <div className="overflow-hidden rounded-2xl  shadow-[0_4px_20px_rgba(212,175,55,0.18)] 
-              h-64 hidden            /* mobile */
+              h-64            /* mobile */
               sm:h-72       
               md:h-96 md:block         /* tablet / small laptop */
               lg:h-[550px]     /* large desktop */
@@ -47,11 +47,9 @@ export const Trust = ({ id }) => {
 
           {/* Paragraph */}
           <p className="text-[#444] text-sm md:text-base leading-relaxed">
-            A Trust Dedicated to Humanity <br />
-            At VV entertainment, we believe that true success is measured not just by what we achieve together, but by how many lives we touch along the way. <br /><br />
-            JFC – Joint for Care was started in 2018 as a registered non-profit trust under the Indian Trusts Act embodies this belief. At the close of every corporate event, family celebration, annual day, or milestone gathering, we joyfully set aside a dedicated portion of our resources to help those who need it most.
-            Through JFC, we extend immediate and direct financial support to individuals and families facing unimaginable hardship, including:
-
+            A Trust Dedicated to Humanity. <br />
+            At VV Entertainment, we believe true success is not only measured by the events we create, but by the lives we uplift along the way. JFC – Joint for Care is our registered non-profit trust, started in 2008 under the Indian Trusts Act, created with a mission of service, compassion, and humanity. <br />
+            At the close of every corporate event, family celebration, annual day, or milestone gathering, we proudly dedicate a portion of our resources towards helping those in need. Through JFC, we provide immediate and direct financial support to
           </p>
 
           {/* Bullet points */}

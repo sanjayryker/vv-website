@@ -26,7 +26,7 @@ export default function Home() {
       <HeroA/>
       <AboutUs id="vv"/>
       <Founder id="founder"/>
-      <EmbedLink/>
+      {/* <EmbedLink/> */}
       <Events/>
       <Awards/>
       <InternationalEvents/>

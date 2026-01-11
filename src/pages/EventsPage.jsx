@@ -65,7 +65,7 @@ const categories = [
   { id: "awards", label: "Award Shows" },
   { id: "international", label: "International Events" },
   { id: "records", label: "World Records" },
-  { id: "upcoming", label: "Upcoming" },
+  { id: "shortFilm", label: "ShortFilm Contest" },
 ];
 
 /* -----------------------------
@@ -268,7 +268,7 @@ export const EventsPage = () => {
         />
 
         <EventCategory
-          id="upcoming"
+          id="shortFilm"
           title="ShortFilm Contest"
           intro="Future Directors and Filmmakers"
           about={
