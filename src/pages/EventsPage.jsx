@@ -202,7 +202,7 @@ export const EventsPage = () => {
 
               <ul className="mt-4 space-y-3 list-disc list-inside text-[#555]">
                 <li>
-                  <strong>International Award Show</strong> – Sri Lanka
+                  <strong>International Award Show – Sri Lanka <img src="https://flagcdn.com/w40/lk.png" alt="Sri Lanka" className="inline-block ml-2 w-6 rounded-sm shadow-sm align-middle" /></strong>
                   <ul className="ml-5 mt-2 list-disc space-y-1">
                     <li>Iconic Achievers Awards</li>
                     <li>Global Women Icon Awards (GWIA)</li>
@@ -214,7 +214,7 @@ export const EventsPage = () => {
                 </li>
 
                 <li>
-                  <strong>UTSAV Mela ’25</strong> – Dallas, Texas, USA
+                  <strong>UTSAV Mela ’25 – Dallas, Texas, USA <img src="https://flagcdn.com/w40/us.png" alt="USA" className="inline-block ml-2 w-6 rounded-sm shadow-sm align-middle" /></strong>
                   <ul className="ml-5 mt-2 list-disc space-y-1">
                     <li>Iconic Awards Ceremony</li>
                     <li>Global Women Icon Awards (GWIA)</li>
@@ -267,6 +267,9 @@ export const EventsPage = () => {
                 <li>
                   <strong>Chithirai Special World Record Event</strong> - Madurai
                 </li>
+                <li>
+                  <strong>Many faces one voice - Stop violence against women</strong> - Madurai
+                </li>
               </ul>
             </>
           }
@@ -283,7 +286,7 @@ export const EventsPage = () => {
             <>
               <p>
                 Driven by purpose and creativity, VV Entertainments successfully conducted a short film contest that celebrated storytelling, talent, and cinematic innovation.
-The event provided a powerful platform for emerging filmmakers to showcase original narratives, creative vision, and impactful voices, reinforcing our commitment to meaningful artistic expression and excellence.
+                The event provided a powerful platform for emerging filmmakers to showcase original narratives, creative vision, and impactful voices, reinforcing our commitment to meaningful artistic expression and excellence.
               </p>
 
               <ul className="mt-4 space-y-3 list-disc list-inside text-[#555]">
@@ -314,7 +317,7 @@ The event provided a powerful platform for emerging filmmakers to showcase origi
               </ul>
             </>
           }
-          gallery={shortFilm.slice(0, 4)}  
+          gallery={shortFilm.slice(0, 4)}
           onImageClick={(i) => openViewer(shortFilm, i)}
         />
 
