@@ -191,7 +191,7 @@ export const Contact = () => {
       {/* ========================= */}
       {/* REQUEST PROPOSAL */}
       {/* ========================= */}
-      <section id="proposal" className="px-6 py-10 bg-gold scroll-mt-30">
+      <section id="proposal" className="px-6 py-10 bg-gold scroll-mt-20 md:scroll-mt-30">
         <div className="max-w-7xl mx-auto">
           <p className="uppercase tracking-[0.25em] text-white text-sm mb-10 text-center">
             Request Proposal

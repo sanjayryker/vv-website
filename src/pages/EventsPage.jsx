@@ -131,7 +131,7 @@ export const EventsPage = () => {
           title="Namma Ooru Vibes"
           intro="Where tradition meets modern celebration."
           about={<>
-            <p> people the experience where tradition meets today's modern events, Namma Ooru Vibes is by VV Entertainments. <br />We play all our cards- live music, food, dance floor and exclusive WOW factors like dhol, chendamelam performances and many more from the creative cultural arena.</p>
+            <p> Experience the perfect blend of tradition and today’s modern celebrations. Namma Ooru Vibes is brought to you by VV Entertainments <br />We play all our cards- live music, food, dance floor and exclusive WOW factors like dhol, chendamelam performances and many more from the creative cultural arena.</p>
             <ul className="mt-4 space-y-2 list-disc list-inside text-[#555]">
               <li> <strong>Namma Ooru Vibes</strong> - Madurai.</li>
               <li><strong>Namma Ooru Vibes Elite</strong> - Chennai.</li>
@@ -268,7 +268,11 @@ export const EventsPage = () => {
                   <strong>Chithirai Special World Record Event</strong> - Madurai
                 </li>
                 <li>
-                  <strong>Many faces one voice - Stop violence against women</strong> - Madurai
+                  <strong>Many faces one voice - Stop violence against women</strong> - An awareness initiative to prevent violence against women.
+                  <ul className="ml-5 mt-2 list-disc space-y-1">
+                    <li>Phase 1: Conducted in American college, chathrapatti, Madurai</li>
+                    <li>Phase 2: Conducted in Lady doak college, Madurai</li>
+                  </ul>
                 </li>
               </ul>
             </>
@@ -297,22 +301,22 @@ export const EventsPage = () => {
 
                 <li>
                   <strong>Lumiere Short Film Contest – Pandiyas Special</strong>
-                  (December 18)
+                  Lady doak college, Madurai
                 </li>
 
                 <li>
                   <strong>Lumiere Short Film Contest – Cholas Special</strong>
-                  (December 18)
+                  (Upcoming)
                 </li>
 
                 <li>
                   <strong>Lumiere Short Film Contest – Cheras Special</strong>
-                  (December 18)
+                  (Upcoming)
                 </li>
 
                 <li>
                   <strong>Lumiere Short Film Contest – Pallavas Special</strong>
-                  (December 18)
+                  (Upcoming)
                 </li>
               </ul>
             </>
