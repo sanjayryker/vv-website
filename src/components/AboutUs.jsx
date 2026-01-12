@@ -47,10 +47,10 @@ export const AboutUs = ({ id }) => {
 
           {/* Paragraph */}
           <p className="text-[#444] text-sm md:text-base leading-relaxed">
-            VV Entertainment, established in 2024, is a professional event management and entertainment service provider specializing in corporate events. We bring creativity, energy, and flawless execution to
+            VV Entertainments, established in 2024, is a professional event management and entertainment service provider specializing in corporate events. We bring creativity, energy, and flawless execution to
             every event—whether it’s a formal corporate gathering or a high-energy celebration.<br />
             We focus on creating memorable experiences through well-planned coordination, premium entertainment, and smooth event flow. Our team ensures every detail is handled with professionalism, so clients can enjoy stress-free events from start to finish.<br />
-            At VV Entertainment, we believe every event should be impactful, engaging, and unforgettable.
+            At VV Entertainments, we believe every event should be impactful, engaging, and unforgettable.
           </p>
 
           {/* Bullet points */}

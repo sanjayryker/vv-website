@@ -47,7 +47,7 @@ export const Trust = ({ id }) => {
 
           {/* Paragraph */}
           <p className="text-[#444] text-sm md:text-base leading-relaxed">
-           At VV Entertainment, we believe true success is not only measured by the events we create, but by the lives we uplift along the way. JFC – Joint for Care is our registered non-profit trust, started in 2018 under the Indian Trusts Act, created with a mission of service, compassion, and humanity. <br/> At the close of every corporate event, family celebration, 
+           At VV Entertainments, we believe true success is not only measured by the events we create, but by the lives we uplift along the way. JFC – Joint for Care is our registered non-profit trust, started in 2018 under the Indian Trusts Act, created with a mission of service, compassion, and humanity. <br/> At the close of every corporate event, family celebration, 
            annual day, or milestone gathering, we proudly dedicate a portion of our resources towards helping those in need. Through JFC, 
            we provide immediate and direct financial support to individuals and families facing difficult circumstances, including victims of natural disasters (floods, cyclones, tsunamis, and earthquakes), families who have suddenly lost their primary breadwinner, critical medical emergencies where treatment becomes a 
            financial burden, and children at risk of dropping out of school due to financial crises.
