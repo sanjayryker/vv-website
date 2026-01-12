@@ -56,6 +56,10 @@ const records = [
   "/record8.jpg",
   "/record9.JPG",
   "/record10.jpg",
+  "/record11.jpeg",
+  "/record12.jpeg",
+  "/record13.jpeg",
+  "/record14.jpeg",
 ]
 
 const shortFilm = [

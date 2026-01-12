@@ -324,7 +324,8 @@ export const Contact = () => {
             {/* CALL */}
             <div className="space-y-4">
               <div className="w-14 h-14 mx-auto rounded-full border border-gold flex items-center justify-center">
-                <Phone size={22} className="text-gold" />
+                <a href="tel:+919876543210"> <Phone size={22} className="text-gold" /> </a>
+
               </div>
 
               <h4 className="font-heading text-lg text-dark">
@@ -342,7 +343,7 @@ export const Contact = () => {
             {/* EMAIL */}
             <div className="space-y-4">
               <div className="w-14 h-14 mx-auto rounded-full border border-gold flex items-center justify-center">
-                <Mail size={22} className="text-gold" />
+                <a href="mailto:info@vventertainments.com"> <Mail size={22} className="text-gold" /> </a>
               </div>
 
               <h4 className="font-heading text-lg text-dark">
@@ -351,7 +352,7 @@ export const Contact = () => {
 
               <a
                 href="mailto:info@vventertainments.com"
-                className="text-sm text-[#555] hover:text-gold transition break-words"
+                className="text-sm text-[#555] hover:text-gold transition wrap-break-word"
               >
                 vventertainmentsmedia@gmail.com
               </a>

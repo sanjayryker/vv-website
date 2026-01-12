@@ -6,7 +6,7 @@ export const Stats = () => {
     { number: 15, label: "Events Completed" },
     { number: 2, label: "Years of Experience" },
     { number: 3, label: "Countries Covered" },
-    { number: 2000, label: "Happy Guests" },
+    { number: 5000, label: "Happy Guests" },
   ];
 
   return (
