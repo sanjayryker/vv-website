@@ -167,7 +167,7 @@ export const Contact = () => {
             {/* CTA */}
             <div className="flex gap-4 pt-4">
               <a
-                href="https://wa.me/919943160812?text=Hi, I’d like to book tickets for Namma Ooru Vibes."
+                href="https://wa.me/919384272666?text=Hi, I’d like to book tickets for Namma Ooru Vibes."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gold items-center text-center text-sm md:text-base text-white px-4 py-2 md:px-8 md:py-3 rounded-full font-medium hover:bg-gold-soft transition "
@@ -213,7 +213,7 @@ export const Contact = () => {
                 <p className="mt-3 text-[#555] text-sm">{o.desc}</p>
 
                 <a
-                  href={`https://wa.me/919943160812?text=${encodeURIComponent(
+                  href={`https://wa.me/919384272666?text=${encodeURIComponent(
                     o.msg
                   )}`}
                   target="_blank"
