@@ -300,8 +300,7 @@ export const EventsPage = () => {
                 </li> */}
 
                 <li>
-                  <strong>Lumiere Short Film Contest – Pandiyas Special</strong>
-                  Lady doak college, Madurai
+                  <strong>Lumiere Short Film Contest – Pandiyas Special </strong>- Lady doak college, Madurai
                 </li>
 
                 <li>
