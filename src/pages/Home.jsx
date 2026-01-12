@@ -35,7 +35,7 @@ export default function Home() {
       {/* <OtherEvents/> */}
       <Trust id="trust"/>
       <NewspaperCutting/>
-      <Testimonial1/>
+      {/* <Testimonial1/> */}
       <Stats/>
       <Footer/>
     </div>
