@@ -10,9 +10,9 @@ export const Awards = () => {
     { title: "Joint for care social service award", desc: "Aerohub mall, Chennai", image: "/award2.jpg" },
     { title: "Life Time Achievement Award", desc: "American College, Madurai", image: "/award3.jpg" },
     { title: "Thamaya women warriors award", desc: "Virudhunagar", image: "/award4.JPG" },
-    { title: "Sifterra", desc: "Chennai", image: "/award5.jpg" },
-    { title: "Chennai Award Show", desc: "Aerohub mall, Chennai", image: "/award6.JPG" },
-    { title: "Future Icon Award", desc: "Aerohub mall, Chennai", image: "/award7.jpg" }
+    { title: "Sifterra", desc: "Chennai", image: "/award-5.jpg" },
+    { title: "Chennai Award Show", desc: "Aerohub mall, Chennai", image: "/award-6.jpg" },
+    { title: "Future Icon Award", desc: "Aerohub mall, Chennai", image: "/award-7.jpg" }
   ];
 
   const showNav = services.length > 3;
