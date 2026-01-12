@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const HeroA = () => {
   const slides = [
     {
-      image: "/hero3.JPG",
+      image: "/hero1.JPG",
       title: "Turning Moments into Memories",
       subtitle:
         "Premium event planning for corporates.",
@@ -16,7 +16,7 @@ export const HeroA = () => {
       subtitle: "End-to-end event management with stunning execution.",
     },
     {
-      image: "/hero1.JPG",
+      image: "/hero3.JPG",
       title: "Experiences That Leave a Mark",
       subtitle: "Décor, lighting & seamless coordination.",
     },

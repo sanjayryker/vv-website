@@ -178,7 +178,7 @@ export const EventsPage = () => {
                 <strong>Thamaya Women Warriors Award</strong> – Virudhunagar
               </li>
               <li>
-                <strong>Sifterra – Grounds of Excellence Awards</strong> – Chennai
+                <strong>Sifterra – Crown of Excellence Awards</strong> – Chennai
               </li>
               <li>
                 <strong>Chennai Award Show</strong> – Aerohub Mall, Chennai
