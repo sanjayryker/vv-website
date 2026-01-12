@@ -8,7 +8,7 @@ export const HeroA = () => {
       image: "/hero1.JPG",
       title: "Turning Moments into Memories",
       subtitle:
-        "Premium event planning for weddings, corporates & celebrations.",
+        "Premium event planning for corporates.",
     },
     {
       image: "/hero2.JPG",
