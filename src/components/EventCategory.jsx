@@ -7,7 +7,8 @@ export const EventCategory = ({
   intro,
   about,
   gallery,
-  onImageClick
+  onImageClick,
+  isSingleFull
 }) => {
   return (
     <section
@@ -40,7 +41,7 @@ export const EventCategory = ({
 
         {/* RIGHT GALLERY — ALIGNED WITH TITLE */}
         <div className="md:pt-1">
-          <GalleryGrid images={gallery} onOpen={onImageClick} />
+          <GalleryGrid images={gallery} onOpen={onImageClick} isSingleFull={isSingleFull} />
         </div>
       </div>
     </section>

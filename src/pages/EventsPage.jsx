@@ -78,6 +78,7 @@ const categories = [
   { id: "international", label: "International Events" },
   { id: "records", label: "World Records" },
   { id: "shortFilm", label: "ShortFilm Contest" },
+  { id: "up coming", label: "Upcoming Events" },
 ];
 
 /* -----------------------------
@@ -326,6 +327,39 @@ export const EventsPage = () => {
           }
           gallery={shortFilm.slice(0, 4)}
           onImageClick={(i) => openViewer(shortFilm, i)}
+        />
+
+        <EventCategory
+          id="up coming"
+          title="Upcoming Events"
+          intro="Anticipate the Extraordinary."
+          about={
+            <>
+              <ul className="space-y-6 list-none text-[#555]">
+                <li>
+                  <strong className="text-lg">NAMMA OORU VIBES – Season 2</strong>
+                  <p className="mt-1">
+                    Returns bigger and bolder, blending tradition with modern festive energy. Features live music, dance floors, food zones, and cultural showcases like dhol beats and chendamelam.
+                  </p>
+                </li>
+                <li>
+                  <strong className="text-lg ">SHEILD – Many Faces One Voice</strong>
+                  <p className="mt-1">
+                    A monthly social impact drive across Tamil Nadu colleges aiming for a world record. Empowers women through inspiring talks and self-defense training to stand against violence.
+                  </p>
+                </li>
+                <li>
+                  <strong className="text-lg">LUMIERE – Upcoming Episodes</strong>
+                  <p className="mt-1">
+                    The flagship short film contest continues with Chera, Chola, and Pallava chapters. Filmmakers showcase stories inspired by royal legacies, with the season winner getting a theatrical release.
+                  </p>
+                </li>
+              </ul>
+            </>
+          }
+          gallery={["/comingSoon.jpg"]}
+          onImageClick={(i) => openViewer(["/comingSoon.jpg"], i)}
+          isSingleFull={true}
         />
 
         {/* LIGHTBOX */}

@@ -111,10 +111,10 @@ export const Contact = () => {
       {/* ========================= */}
       {/* UPCOMING EVENT */}
       {/* ========================= */}
-      <section id="book" className="px-6 py-20 bg-[#faf7f2] scroll-mt-24">
+      {/* <section id="book" className="px-6 py-20 bg-[#faf7f2] scroll-mt-24">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-          {/* EVENT POSTER */}
+        
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -129,7 +129,7 @@ export const Contact = () => {
             />
           </motion.div>
 
-          {/* EVENT DETAILS */}
+          
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -151,7 +151,7 @@ export const Contact = () => {
               exclusively by VV Entertainments.
             </p>
 
-            {/* EVENT META */}
+            
             <div className="space-y-2 text-sm text-[#444]">
               <p>
                 <span className="font-medium text-dark">📍 Venue:</span> Chennai Trade Centre
@@ -164,7 +164,7 @@ export const Contact = () => {
               </p>
             </div>
 
-            {/* CTA */}
+           
             <div className="flex gap-4 pt-4">
               <a
                 href="https://wa.me/919384272666?text=Hi, I’d like to book tickets for Namma Ooru Vibes."
@@ -185,7 +185,7 @@ export const Contact = () => {
           </motion.div>
 
         </div>
-      </section>
+      </section> */}
 
 
       {/* ========================= */}
