@@ -19,7 +19,7 @@
   --color-gold-soft: #E6C76F;
   --color-dark: #0E0E0E;
 
-  --shadow-soft: 0 18px 45px rgba(0,0,0,0.15);
+  --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.15);
   --radius-card: 24px;
 }
 
@@ -29,12 +29,18 @@
 @layer base {
   body {
     font-family: var(--font-body);
-    background: white;   /* IMPORTANT to match white + gold theme */
+    background: white;
+    /* IMPORTANT to match white + gold theme */
     color: #333;
     margin: 0;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-heading);
   }
 
@@ -47,14 +53,13 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
 .scrollbar-hide {
   scrollbar-width: none;
 }
 
 .contact-input {
-  @apply border border-[#ddd] rounded-xl px-4 py-3 
-         focus:outline-none focus:border-gold
-         text-sm md:text-base;
+  @apply border border-[#ddd] rounded-xl px-4 py-3 focus:outline-none focus:border-gold text-sm md:text-base;
 }
 
 
@@ -65,6 +70,7 @@ html {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
 .scrollbar-hide {
   scrollbar-width: none;
 }

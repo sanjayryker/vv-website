@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export const WhatsAppFloat = () => {
-  const phone = "919876543210"; // 🔴 replace with your real number
+  const phone = "919384272666"; 
   const message = "Hi 👋 I’d like to enquire about an event.";
 
   return (

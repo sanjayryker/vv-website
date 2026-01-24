@@ -26,7 +26,7 @@ export default function Home() {
       <HeroA/>
       <AboutUs id="vv"/>
       <Founder id="founder"/>
-      <EmbedLink/>
+      {/* <EmbedLink/> */}
       <Events/>
       <Awards/>
       <InternationalEvents/>
@@ -35,7 +35,7 @@ export default function Home() {
       {/* <OtherEvents/> */}
       <Trust id="trust"/>
       <NewspaperCutting/>
-      <Testimonial1/>
+      {/* <Testimonial1/> */}
       <Stats/>
       <Footer/>
     </div>

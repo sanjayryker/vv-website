@@ -100,7 +100,7 @@ export default function Navbar() {
           <Link to="/contact#form">Contact</Link>
 
           <Link
-            to="/contact"
+            to="/contact#proposal"
             className="bg-gold text-white px-4 py-2 rounded-full"
           >
             Book Now
@@ -250,7 +250,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              to="/contact"
+              to="/contact#proposal"
               onClick={() => setMenuOpen(false)}
               className="block bg-gold text-white text-center py-3 px-4 rounded-full mt-4"
             >

@@ -11,8 +11,13 @@ import { MapPin, Phone, Mail } from "lucide-react";
 ----------------------------- */
 const proposalOptions = [
   {
+    title: "Register for Event",
+    desc: "Upcoming event registeration.",
+    msg: "Hi, I’d like to register for an event.",
+  },
+  {
     title: "Request Event Proposal",
-    desc: "Weddings, concerts, corporate & private events.",
+    desc: "Corporate & private events.",
     msg: "Hi, I’d like to request an event proposal.",
   },
   {
@@ -106,10 +111,10 @@ export const Contact = () => {
       {/* ========================= */}
       {/* UPCOMING EVENT */}
       {/* ========================= */}
-      <section id="book" className="px-6 py-20 bg-[#faf7f2] scroll-mt-24">
+      {/* <section id="book" className="px-6 py-20 bg-[#faf7f2] scroll-mt-24">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-          {/* EVENT POSTER */}
+        
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -124,7 +129,7 @@ export const Contact = () => {
             />
           </motion.div>
 
-          {/* EVENT DETAILS */}
+          
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -146,7 +151,7 @@ export const Contact = () => {
               exclusively by VV Entertainments.
             </p>
 
-            {/* EVENT META */}
+            
             <div className="space-y-2 text-sm text-[#444]">
               <p>
                 <span className="font-medium text-dark">📍 Venue:</span> Chennai Trade Centre
@@ -159,20 +164,20 @@ export const Contact = () => {
               </p>
             </div>
 
-            {/* CTA */}
+           
             <div className="flex gap-4 pt-4">
               <a
-                href="https://wa.me/919943160812?text=Hi, I’d like to book tickets for Namma Ooru Vibes."
+                href="https://wa.me/919384272666?text=Hi, I’d like to book tickets for Namma Ooru Vibes."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gold text-dark px-8 py-3 rounded-full font-medium hover:bg-gold-soft transition "
+                className="bg-gold items-center text-center text-sm md:text-base text-white px-4 py-2 md:px-8 md:py-3 rounded-full font-medium hover:bg-gold-soft transition "
               >
                 Book Now
               </a>
 
               <a
                 href="/events"
-                className="border border-gold text-gold px-8 py-3 rounded-full hover:bg-gold/10 transition"
+                className="border items-center text-center text-sm md:text-base border-gold text-gold px-4 py-2 md:px-8 md:py-3 rounded-full hover:bg-gold/10 transition"
               >
                 View Details
               </a>
@@ -180,19 +185,19 @@ export const Contact = () => {
           </motion.div>
 
         </div>
-      </section>
+      </section> */}
 
 
       {/* ========================= */}
       {/* REQUEST PROPOSAL */}
       {/* ========================= */}
-      <section id="proposal" className="px-6 py-10 bg-gold scroll-mt-24">
+      <section id="proposal" className="px-6 py-10 bg-gold scroll-mt-20 md:scroll-mt-30">
         <div className="max-w-7xl mx-auto">
           <p className="uppercase tracking-[0.25em] text-white text-sm mb-10 text-center">
             Request Proposal
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             {proposalOptions.map((o, i) => (
               <motion.div
                 key={i}
@@ -201,19 +206,19 @@ export const Contact = () => {
                 whileHover={{ y: -8 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-2xl p-8 text-center"
+                className="bg-white rounded-2xl p-4 md:p-8 text-center"
               >
                 <h3 className="text-xl font-heading text-dark">{o.title}</h3>
 
                 <p className="mt-3 text-[#555] text-sm">{o.desc}</p>
 
                 <a
-                  href={`https://wa.me/919943160812?text=${encodeURIComponent(
+                  href={`https://wa.me/919384272666?text=${encodeURIComponent(
                     o.msg
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-6 border border-gold text-gold px-6 py-2 rounded-full hover:bg-gold hover:text-dark transition"
+                  className="inline-block text-sm md:text-base mt-6 border border-gold text-gold px-6 py-2 rounded-full hover:bg-gold hover:text-dark transition"
                 >
                   Get in Touch
                 </a>
@@ -271,7 +276,7 @@ export const Contact = () => {
           <button
             type="submit"
             disabled={loading}
-            className="block mx-auto bg-gold text-dark py-3 w-56 md:w-64 rounded-full font-medium hover:bg-gold-soft transition flex items-center justify-center gap-2 disabled:opacity-70 cursor-pointer"
+            className="block mx-auto bg-gold text-white py-3 w-56 md:w-64 rounded-full font-medium hover:bg-gold-soft transition flex items-center justify-center gap-2 disabled:opacity-70 cursor-pointer"
           >
             {loading ? (
               <>
@@ -319,7 +324,8 @@ export const Contact = () => {
             {/* CALL */}
             <div className="space-y-4">
               <div className="w-14 h-14 mx-auto rounded-full border border-gold flex items-center justify-center">
-                <Phone size={22} className="text-gold" />
+                <a href="tel:+919876543210"> <Phone size={22} className="text-gold" /> </a>
+
               </div>
 
               <h4 className="font-heading text-lg text-dark">
@@ -337,7 +343,7 @@ export const Contact = () => {
             {/* EMAIL */}
             <div className="space-y-4">
               <div className="w-14 h-14 mx-auto rounded-full border border-gold flex items-center justify-center">
-                <Mail size={22} className="text-gold" />
+                <a href="mailto:info@vventertainments.com"> <Mail size={22} className="text-gold" /> </a>
               </div>
 
               <h4 className="font-heading text-lg text-dark">
@@ -346,7 +352,7 @@ export const Contact = () => {
 
               <a
                 href="mailto:info@vventertainments.com"
-                className="text-sm text-[#555] hover:text-gold transition break-words"
+                className="text-sm text-[#555] hover:text-gold transition wrap-break-word"
               >
                 vventertainmentsmedia@gmail.com
               </a>

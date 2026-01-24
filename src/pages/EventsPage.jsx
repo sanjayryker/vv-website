@@ -25,9 +25,9 @@ const awardsImages = [
   "/award2.jpg",
   "/award3.jpg",
   "/award4.JPG",
-  "/award5.jpg",
-  "/award6.JPG",
-  "/award7.jpg",
+  "/award-5.jpg",
+  "/award-6.jpg",
+  "/award-7.jpg",
   "/award8.jpg",
   "/award9.JPG",
   "/award10.JPG",
@@ -56,6 +56,18 @@ const records = [
   "/record8.jpg",
   "/record9.JPG",
   "/record10.jpg",
+  "/record11.jpeg",
+  "/record12.jpeg",
+  "/record13.jpeg",
+  "/record14.jpeg",
+]
+
+const shortFilm = [
+  "/short1.jpg",
+  "/short2.jpg",
+  "/short3.jpg",
+  "/short4.jpg",
+  "/short5.JPG",
 ]
 /* -----------------------------
    CATEGORY NAV
@@ -65,7 +77,8 @@ const categories = [
   { id: "awards", label: "Award Shows" },
   { id: "international", label: "International Events" },
   { id: "records", label: "World Records" },
-  { id: "upcoming", label: "Upcoming" },
+  { id: "shortFilm", label: "ShortFilm Contest" },
+  { id: "up coming", label: "Upcoming Events" },
 ];
 
 /* -----------------------------
@@ -123,7 +136,7 @@ export const EventsPage = () => {
           title="Namma Ooru Vibes"
           intro="Where tradition meets modern celebration."
           about={<>
-            <p> people the experience where tradition meets today's modern events, Namma Ooru Vibes is by VV Entertainments. <br />We play all our cards- live music, food, dance floor and exclusive WOW factors like dhol, chendamelam performances and many more from the creative cultural arena.</p>
+            <p> Experience the perfect blend of tradition and today’s modern celebrations. Namma Ooru Vibes is brought to you by VV Entertainments <br />We play all our cards- live music, food, dance floor and exclusive WOW factors like dhol, chendamelam performances and many more from the creative cultural arena.</p>
             <ul className="mt-4 space-y-2 list-disc list-inside text-[#555]">
               <li> <strong>Namma Ooru Vibes</strong> - Madurai.</li>
               <li><strong>Namma Ooru Vibes Elite</strong> - Chennai.</li>
@@ -166,7 +179,7 @@ export const EventsPage = () => {
                 <strong>Thamaya Women Warriors Award</strong> – Virudhunagar
               </li>
               <li>
-                <strong>Sifterra – Grounds of Excellence Awards</strong> – Chennai
+                <strong>Sifterra – Crown of Excellence Awards</strong> – Chennai
               </li>
               <li>
                 <strong>Chennai Award Show</strong> – Aerohub Mall, Chennai
@@ -194,7 +207,7 @@ export const EventsPage = () => {
 
               <ul className="mt-4 space-y-3 list-disc list-inside text-[#555]">
                 <li>
-                  <strong>International Award Show</strong> – Sri Lanka
+                  <strong>International Award Show – Sri Lanka <img src="https://flagcdn.com/w40/lk.png" alt="Sri Lanka" className="inline-block ml-2 w-6 rounded-sm shadow-sm align-middle" /></strong>
                   <ul className="ml-5 mt-2 list-disc space-y-1">
                     <li>Iconic Achievers Awards</li>
                     <li>Global Women Icon Awards (GWIA)</li>
@@ -206,7 +219,7 @@ export const EventsPage = () => {
                 </li>
 
                 <li>
-                  <strong>UTSAV Mela ’25</strong> – Dallas, Texas, USA
+                  <strong>UTSAV Mela ’25 – Dallas, Texas, USA <img src="https://flagcdn.com/w40/us.png" alt="USA" className="inline-block ml-2 w-6 rounded-sm shadow-sm align-middle" /></strong>
                   <ul className="ml-5 mt-2 list-disc space-y-1">
                     <li>Iconic Awards Ceremony</li>
                     <li>Global Women Icon Awards (GWIA)</li>
@@ -259,6 +272,13 @@ export const EventsPage = () => {
                 <li>
                   <strong>Chithirai Special World Record Event</strong> - Madurai
                 </li>
+                <li>
+                  <strong>Many faces one voice - Stop violence against women</strong> - An awareness initiative to prevent violence against women.
+                  <ul className="ml-5 mt-2 list-disc space-y-1">
+                    <li>Phase 1: Conducted in American college, chathrapatti, Madurai</li>
+                    <li>Phase 2: Conducted in Lady doak college, Madurai</li>
+                  </ul>
+                </li>
               </ul>
             </>
           }
@@ -268,14 +288,14 @@ export const EventsPage = () => {
         />
 
         <EventCategory
-          id="upcoming"
+          id="shortFilm"
           title="ShortFilm Contest"
           intro="Future Directors and Filmmakers"
           about={
             <>
               <p>
                 Driven by purpose and creativity, VV Entertainments successfully conducted a short film contest that celebrated storytelling, talent, and cinematic innovation.
-The event provided a powerful platform for emerging filmmakers to showcase original narratives, creative vision, and impactful voices, reinforcing our commitment to meaningful artistic expression and excellence.
+                The event provided a powerful platform for emerging filmmakers to showcase original narratives, creative vision, and impactful voices, reinforcing our commitment to meaningful artistic expression and excellence.
               </p>
 
               <ul className="mt-4 space-y-3 list-disc list-inside text-[#555]">
@@ -285,29 +305,61 @@ The event provided a powerful platform for emerging filmmakers to showcase origi
                 </li> */}
 
                 <li>
-                  <strong>Lumiere Short Film Contest – Pandiyas Special</strong>
-                  (December 18)
+                  <strong>Lumiere Short Film Contest – Pandiyas Special </strong>- Lady doak college, Madurai
                 </li>
 
                 <li>
                   <strong>Lumiere Short Film Contest – Cholas Special</strong>
-                  (December 18)
+                  (Upcoming)
                 </li>
 
                 <li>
                   <strong>Lumiere Short Film Contest – Cheras Special</strong>
-                  (December 18)
+                  (Upcoming)
                 </li>
 
                 <li>
                   <strong>Lumiere Short Film Contest – Pallavas Special</strong>
-                  (December 18)
+                  (Upcoming)
                 </li>
               </ul>
             </>
           }
-          gallery={vibesImages.slice(0, 4)}  
-          onImageClick={(i) => openViewer(vibesImages, i)}
+          gallery={shortFilm.slice(0, 4)}
+          onImageClick={(i) => openViewer(shortFilm, i)}
+        />
+
+        <EventCategory
+          id="up coming"
+          title="Upcoming Events"
+          intro="Anticipate the Extraordinary."
+          about={
+            <>
+              <ul className="space-y-6 list-none text-[#555]">
+                <li>
+                  <strong className="text-lg">NAMMA OORU VIBES – Season 2</strong>
+                  <p className="mt-1">
+                    Returns bigger and bolder, blending tradition with modern festive energy. Features live music, dance floors, food zones, and cultural showcases like dhol beats and chendamelam.
+                  </p>
+                </li>
+                <li>
+                  <strong className="text-lg ">SHEILD – Many Faces One Voice</strong>
+                  <p className="mt-1">
+                    A monthly social impact drive across Tamil Nadu colleges aiming for a world record. Empowers women through inspiring talks and self-defense training to stand against violence.
+                  </p>
+                </li>
+                <li>
+                  <strong className="text-lg">LUMIERE – Upcoming Episodes</strong>
+                  <p className="mt-1">
+                    The flagship short film contest continues with Chera, Chola, and Pallava chapters. Filmmakers showcase stories inspired by royal legacies, with the season winner getting a theatrical release.
+                  </p>
+                </li>
+              </ul>
+            </>
+          }
+          gallery={["/comingSoon.jpg"]}
+          onImageClick={(i) => openViewer(["/comingSoon.jpg"], i)}
+          isSingleFull={true}
         />
 
         {/* LIGHTBOX */}

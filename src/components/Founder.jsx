@@ -4,7 +4,7 @@ export const Founder = ({ id }) => {
   return (
     <>
 
-      <section id={id} className="px-6 py-8 md:py-16 max-w-7xl mx-auto bg-gold scroll-mt-24">
+      <section id={id} className="px-6 py-8 md:py-14 max-w-7xl mx-auto bg-gold scroll-mt-24">
         <div className="grid md:grid-cols-2 gap-10 items-center">
 
           {/* IMAGE — FIRST ON MOBILE, SECOND ON DESKTOP */}
@@ -17,12 +17,12 @@ export const Founder = ({ id }) => {
           >
             <div
               className="overflow-hidden rounded-2xl 
-            h-64 sm:h-72 md:h-96 lg:h-[500px]"
+            h-64 sm:h-72 md:h-96 lg:h-[480px]"
             >
               <img
-                src="/founder.jpeg"
+                src="/founder9.JPG"
                 alt="Founder"
-                className="relative z-10 w-full h-full object-cover rounded-2xl shadow-2xl"
+                className="relative z-10 mx-auto w-[90%] h-full object-cover rounded-2xl shadow-2xl"
                 loading="lazy"
               />
             </div>
@@ -48,7 +48,10 @@ export const Founder = ({ id }) => {
 
             {/* Paragraph */}
             <p className="text-[#444] text-sm md:text-base leading-relaxed">
-              Dr. Vijay Vishwa is a known face in the South Indian film and entertainment circuit. With strong roots in media, performance arts, and public engagement, he carries an understanding of what captivates a crowd and transforms events into unforgettable experiences. Alongside his creative journey, he has been actively involved in charitable work since 2004, blending artistic vision with cultural resonance to create moments that truly connect with audiences.
+              With strong roots in the South Indian film and entertainment circuit, the founder of VV Entertainments is a well-known actor and social activist who brings deep expertise in performance arts, media presence, and public engagement.
+              With a clear understanding of what captivates audiences,
+              he focuses on transforming events into unforgettable experiences by blending creativity, cultural resonance, and professionalism. Alongside this artistic journey, he has been actively involved
+              in charitable and social welfare work since 2004, reflecting a long-standing commitment to giving back to society and creating meaningful impact through both entertainment and service.
             </p>
 
             {/* Gold decorative line */}
@@ -57,7 +60,7 @@ export const Founder = ({ id }) => {
             {/* Founder Name */}
             <div>
               <h3 className="text-xl font-heading text-dark">Dr. Vijay Vishwa</h3>
-              <p className="text-[#666] text-sm">Founder & CEO</p>
+              <p className="text-[#666] text-sm">Actor & Social activist</p>
             </div>
           </motion.div>
 

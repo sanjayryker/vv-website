@@ -34,7 +34,7 @@ export const InternationalEvents = () => {
             id="services-prev"
             className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-20
               w-12 h-12 rounded-full bg-gold text-white items-center justify-center
-              hover:scale-105 transition"
+              hover:scale-105 transition cursor-pointer"
             aria-label="Previous"
           >
             ❮
@@ -46,7 +46,7 @@ export const InternationalEvents = () => {
             id="services-next"
             className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-20
               w-12 h-12 rounded-full bg-gold text-white items-center justify-center
-              hover:scale-105 transition"
+              hover:scale-105 transition cursor-pointer"
             aria-label="Next"
           >
             ❯
@@ -68,7 +68,7 @@ export const InternationalEvents = () => {
             640: { slidesPerView: 2.2, spaceBetween: 16 },
             1024: { slidesPerView: 3, spaceBetween: 16 },
           }}
-          className="pb-12 cursor-pointer"
+          className="pb-12"
         >
           {services.map((item, index) => (
             <SwiperSlide key={index}>

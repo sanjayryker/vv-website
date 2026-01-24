@@ -63,7 +63,7 @@ export const NewspaperCutting = () => {
           Our Achievements
         </p>
         <h2 className="text-3xl md:text-4xl font-heading text-dark">
-          Crafted With Perfection
+          Excellence Recognized
         </h2>
       </div>
 
@@ -72,7 +72,7 @@ export const NewspaperCutting = () => {
         onClick={() => { stopAutoScroll(); prev(); }}
         className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-40
           w-12 h-12 rounded-full bg-gold text-white shadow-lg items-center 
-          justify-center hover:scale-105 transition"
+          justify-center hover:scale-105 transition cursor-pointer"
       >
         ❮
       </button>
@@ -81,7 +81,7 @@ export const NewspaperCutting = () => {
         onClick={() => { stopAutoScroll(); next(); }}
         className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-40
           w-12 h-12 rounded-full bg-gold text-white shadow-lg items-center 
-          justify-center hover:scale-105 transition"
+          justify-center hover:scale-105 transition cursor-pointer"
       >
         ❯
       </button>
